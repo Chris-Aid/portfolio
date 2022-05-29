@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   images = ['firstimage.jpg', 'secondimage.jpg', 'thirdimage.jpg'];
   currentImage = 0;
-  // showImage = true;
+  showImage = true;
 
   ngOnInit() {
     this.updateImage();
@@ -20,11 +20,11 @@ export class AppComponent implements OnInit {
     setInterval(() => {
       this.currentImage++;
       this.currentImage = this.currentImage % this.images.length;
-      // this.showImage = false;
+      this.showImage = false;
 
-      // setTimeout(() => {
-      //   this.showImage = true;
-      // }, 10);
+      setTimeout(() => {
+        this.showImage = true;
+      }, 10);
     }, 4000);
   }
 }
