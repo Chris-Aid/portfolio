@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SlideshowComponent } from './slideshow.component';
+import { DataProtectionComponent } from './data-protection.component';
 
-describe('SlideshowComponent', () => {
-  let component: SlideshowComponent;
-  let fixture: ComponentFixture<SlideshowComponent>;
+describe('DataProtectionComponent', () => {
+  let component: DataProtectionComponent;
+  let fixture: ComponentFixture<DataProtectionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SlideshowComponent ]
+      declarations: [ DataProtectionComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SlideshowComponent);
+    fixture = TestBed.createComponent(DataProtectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
