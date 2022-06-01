@@ -1,0 +1,12 @@
+<div class="mySkills-section">
+    <h1>MY Skills</h1>
+
+    <div class="skillContainer">
+        <div *ngFor="let image of skillImages" class="singleSkill">
+            <div class="imageContainer">
+                <img src="./assets/img/{{image}}" alt="imagesOfSkills">
+            </div>
+            <p>{{skillTitles}}</p>
+        </div>
+    </div>
+</div>
