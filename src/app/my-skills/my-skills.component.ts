@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class MySkillsComponent implements OnInit {
 
   skillImages = ['java script.png', 'angular.png', 'HTML-CSS.png', 'Group 226.png', 'Git-Icon-1788C 2.png', 'Group 20.png', 'rest-api.png', 'test-automation.png', 'database.png'];
-  skillTitles = ['Java script', 'Angular', 'HTML / CSS', 'SCRUM', 'Git', 'Design Thinking', 'Rest API', 'Test automation.png', 'Database'];
+  skillTitles = ['Java script', 'Angular', 'HTML / CSS', 'SCRUM', 'Git', 'Design Thinking', 'Rest API', 'Test automation', 'Database'];
   ngOnInit(): void {
 
   }

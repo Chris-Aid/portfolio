@@ -9,8 +9,18 @@
     color: white;
 
     h1 {
-        margin-bottom: 80px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
     }
+}
+
+.subject-container {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .skillContainer {
@@ -24,6 +34,9 @@
      
      p {
          color: black;
+         font-family: 'Roboto', sans-serif;
+         font-size: 18px;
+         font-weight: 400;
      }
 
 }
@@ -46,17 +59,17 @@
 
 .imageContainer {
     border-radius: 100%;
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
     background-color: white;
     position: absolute;
     top: -20;
-    top: -65px;
+    top: -33px;
     display: flex;
     justify-content: center;
     align-items: center;
 
     img {
-        height: 50px;
+        height: 35px;
     }
 }
