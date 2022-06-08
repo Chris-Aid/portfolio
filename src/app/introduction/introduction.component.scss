@@ -35,22 +35,25 @@
             color: white;
         }
     }
-
-    img {
-        height: 60px;
-        cursor: pointer;
-        filter: invert(1);
-    }
 }
 
-.my-introduction {
-    width: 715px;
-    height: 278px;
-}
+// .my-introduction {
+//     width: 715px;
+//     height: 278px;
+// }
 
 .intro-content {
+    display: flex;
     padding-left: 119px;
     padding-top: calc(144px + 58px);
+    gap: 128px;
+
+    img {
+        height: 400px;
+        width: 400px;
+        object-fit: cover;
+        border-radius: 100%;
+    }
 }
 
 .scrollDownArrow {
@@ -61,4 +64,9 @@
     justify-content: center;
     align-items: center;
     height: 80px;
+}
+
+.textAndButton {
+    display: flex;
+    flex-direction: column;
 }
