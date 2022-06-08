@@ -1,0 +1,79 @@
+.about-me-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #1A1A1A;
+    color: white;
+    padding-top: 32px;
+
+    img {
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+}
+
+.introduction {
+    display: flex;
+    margin-bottom: 64px;
+    gap: 128px;
+}
+
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        text-align: center;
+    }
+}
+
+.my-journey {
+    border-top: 1px solid #2DFCD8;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 96px;
+}
+
+.image-container {
+    height: 65px;
+    width: 65px;
+    border-radius: 100%;
+    background-color: #2DFCD8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 30px;
+        width: 30px;
+        object-fit: cover;
+    }
+}
+
+.my-journey-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-container {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        text-align: center;
+    }
+}

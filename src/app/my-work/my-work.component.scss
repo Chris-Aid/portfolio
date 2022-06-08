@@ -23,12 +23,13 @@
 }
 
 .my-projects {
-    width: 70vw;
+    width: 65vw;
     display: flex;
     justify-content: center;
     gap: 32px;
     margin-top: 32px;
     flex-wrap: wrap;
+    margin-bottom: 32px;
     
     img {
         width: 400px;
