@@ -31,6 +31,18 @@ header {
             color: rgb(185, 183, 183);
         }
     }
+
+    button {
+        outline: none;
+        border-radius: 2px;
+        box-shadow: none;
+        border: 0;
+
+        &:focus {
+            border: 1px solid white;
+        }
+    }
+    
 }
 
 .darkLinks {
@@ -61,6 +73,34 @@ header {
         display: none;
     }
 
+    .navbar-toggler-icon {
+        height: 25px !important;
+        width: 20px !important;
+    }
+
+    .nav-link {
+            padding-top: 100px;
+    }
+
+    .bg-dark {
+        --bs-bg-opacity: 0 !important;
+    }
+
+    .dropdown-toggle::after {
+        content: none;
+    }
+
+    .navbar>.container-fluid {
+        justify-content: flex-end !important;
+        flex-wrap: unset !important;
+        flex-direction: row-reverse;
+        gap: 12px;
+    }
+
+    .dropdown-item {
+        width: auto !important;
+    }
+
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -70,8 +110,37 @@ header {
         padding-left: 32px;
         padding-right: 32px;
     }
+
     .links {
         display: none;
+    }
+
+    .navbar-toggler-icon {
+        height: 25px !important;
+        width: 20px !important;
+    }
+
+    .nav-link {
+            padding-top: 100px;
+    }
+
+    .bg-dark {
+        --bs-bg-opacity: 0 !important;
+    }
+
+    .dropdown-toggle::after {
+        content: none;
+    }
+
+    .navbar>.container-fluid {
+        justify-content: flex-end !important;
+        flex-wrap: unset !important;
+        flex-direction: row-reverse;
+        gap: 12px;
+    }
+
+    .dropdown-item {
+        width: auto !important;
     }
 
 }
@@ -83,7 +152,15 @@ header {
 @media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    .links {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}

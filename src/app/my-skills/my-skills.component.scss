@@ -30,13 +30,13 @@
     flex-wrap: wrap;
     height: 80vh;
     width: 55vw;
-     
-     p {
-         color: black;
-         font-family: 'Roboto', sans-serif;
-         font-size: 18px;
-         font-weight: 400;
-     }
+
+    p {
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+    }
 
 }
 
@@ -73,3 +73,58 @@
         height: 35px;
     }
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 340px) {
+
+    .subject-container {
+        height: auto;
+    }
+    .skillContainer {
+        width: 100vw;
+        gap: 12px;
+    }
+
+    .singleSkill {
+        width: 29%;
+
+        p {
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 340px) {
+
+    .subject-container {
+        height: auto;
+    }
+    
+    .skillContainer {
+        width: 100vw;
+        gap: 12px;
+    }
+
+    .singleSkill {
+        width: 29%;
+
+        p {
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
