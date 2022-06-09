@@ -48,3 +48,42 @@ header {
     background-color: white;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 340px) {
+
+    header {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .links {
+        display: none;
+    }
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 340px) {
+
+    header {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .links {
+        display: none;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
