@@ -4,6 +4,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    h1 {
+        font-weight: 500;
+    }
 }
 
 .button-container {
@@ -18,6 +22,10 @@
         width: 128px;
         height: 70px;
 
+        &:hover {
+            box-shadow: 0px 2px 2px #FA2759;
+            cursor: pointer;
+        }
     }
 }
 
