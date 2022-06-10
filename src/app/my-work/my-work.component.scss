@@ -30,17 +30,12 @@
 }
 
 .my-projects {
-    width: 65vw;
     display: flex;
     justify-content: center;
     gap: 32px;
     margin-top: 32px;
     flex-wrap: wrap;
     margin-bottom: 32px;
-
-    img {
-        width: 400px;
-    }
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -48,12 +43,13 @@
 
     .my-projects {
         img {
-                width: 324px;
+            width: 324px;
         }
     }
+
     .my-work-container {
         h1 {
-            margin-top: 16px;
+            margin-top: 32px;
             margin-bottom: 16px;
         }
     }
@@ -72,12 +68,13 @@
 
     .my-projects {
         img {
-                width: 324px;
+            width: 324px;
         }
     }
+
     .my-work-container {
         h1 {
-            margin-top: 16px;
+            margin-top: 32px;
             margin-bottom: 16px;
         }
     }
@@ -87,18 +84,68 @@
             width: 100px;
             height: 50px;
         }
-
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    .my-projects {
+        width: 100%;
+
+        img {
+            width: 270px;
+        }
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .my-projects {
+        width: 90%;
+
+        img {
+            width: 320px;
+        }
+    }
+
+    .button-container {
+        button {
+            width: 130px;
+            height: 70px;
+        }
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    .my-projects {
+        width: 70%;
+
+        img {
+            width: 320px;
+        }
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .my-projects {
+        img {
+            width: 360px;
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (min-width: 1500px) {}
+
+/* Extra large devices (large desktops, 1650px and up) */
+@media only screen and (min-width: 1650px) {
+    .my-projects {
+        width: 60%;
+
+        img {
+            width: 400px;
+        }
+    }
+}

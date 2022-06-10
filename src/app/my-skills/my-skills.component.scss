@@ -1,16 +1,22 @@
-.mySkills-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.mySkillsContent {
     background-color: #1A1A1A;
     color: white;
 
     h1 {
+        margin-top: 32px;
+        margin-bottom: 64px;
         font-family: 'Inter', sans-serif;
         font-weight: 500;
     }
+}
+
+.mySkills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
 }
 
 .subject-container {
@@ -18,7 +24,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 16px;
     margin-bottom: 16px;
 }
 
@@ -28,8 +33,9 @@
     align-items: center;
     gap: 46px;
     flex-wrap: wrap;
-    height: 80vh;
+    height: 55vh;
     width: 55vw;
+    margin-bottom: 32px;
 
     p {
         color: black;
@@ -80,17 +86,28 @@
     .subject-container {
         height: auto;
     }
+
     .skillContainer {
-        width: 100vw;
+        width: 100%;
         gap: 12px;
     }
 
     .singleSkill {
-        width: 29%;
+        width: 28%;
+        height: 16%;
 
         p {
             margin-top: 30px;
-            font-size: 14px;
+            font-size: 13px;
+        }
+    }
+
+    .imageContainer {
+        height: 60px;
+        width: 60px;
+
+        img {
+            height: 35px;
         }
     }
 }
@@ -101,30 +118,77 @@
     .subject-container {
         height: auto;
     }
-    
+
     .skillContainer {
-        width: 100vw;
+        width: 100%;
         gap: 12px;
     }
 
     .singleSkill {
-        width: 29%;
+        width: 28%;
+        height: 16%;
 
         p {
             margin-top: 30px;
-            font-size: 14px;
+            font-size: 13px;
+        }
+    }
+
+    .imageContainer {
+        height: 60px;
+        width: 60px;
+
+        img {
+            height: 35px;
         }
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    .skillContainer {
+        width: 85%;
+        gap: 24px;
+        
+        p {
+            margin-top: 22px;
+            font-size: 16px;
+        }
+    }
+    .singleSkill {
+        height: 18%;;
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .skillContainer {
+        width: 75%;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    .skillContainer {
+        width: 60%;
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .skillContainer {
+        width: 50%;
+        gap: 32px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (min-width: 1500px) {
+    .skillContainer {
+        width: 40%;
+    }
+}

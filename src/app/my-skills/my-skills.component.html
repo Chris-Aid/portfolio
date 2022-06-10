@@ -1,18 +1,19 @@
-<div class="mySkills-section">
+<div class="mySkillsContent">
     <div class="subject-container">
         <h1>My Skills</h1>
     </div>
-    
 
-    <div class="skillContainer">
-        <div *ngFor="let image of skillImages; let i = index" class="singleSkill">
-            <div class="imageContainer">
-                <img src="./assets/img/{{image}}" alt="imagesOfSkills">
+    <div class="mySkills-section">
+        <div class="skillContainer">
+            <div *ngFor="let image of skillImages; let i = index" class="singleSkill">
+                <div class="imageContainer">
+                    <img src="./assets/img/{{image}}" alt="imagesOfSkills">
+                </div>
+                <div class="skillTitles">
+                    <p>{{skillTitles[i]}}</p>
+                </div>
+    
             </div>
-            <div class="skillTitles">
-                <p>{{skillTitles[i]}}</p>
-            </div>
-           
         </div>
     </div>
 </div>
