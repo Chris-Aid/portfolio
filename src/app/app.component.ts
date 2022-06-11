@@ -6,15 +6,10 @@ import { Router } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent{
-// currentRoute = '/';
+export class AppComponent {
 
-constructor(public router: Router) {
+  constructor(public router: Router) {
 
-}
-// ngOnInit() {
-//   this.currentRoute = this.router.url;
-//   console.log(this.router.url);
-// }
+  }
 
 }

@@ -12,4 +12,7 @@ export class IntroductionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+//   scroll(el: HTMLElement) {
+//     el.scrollIntoView({behavior: 'smooth'});
+// }
 }
