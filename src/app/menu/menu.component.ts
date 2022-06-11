@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -7,7 +8,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
   @Input() darkMode = true;
-  constructor() { }
+  constructor(public router: Router) {
+
+  }
+
 
   ngOnInit(): void {
   }

@@ -1,7 +1,8 @@
 <header [class.headerDark]="darkMode">
-
+<!-- 
     <img *ngIf="!darkMode" routerLink="/" src="./assets/img/logo.png" alt="myLogo">
-    <img *ngIf="darkMode" routerLink="/" src="./assets/img/logoBlack.png" alt="myLogo">
+    <img *ngIf="darkMode" routerLink="/" src="./assets/img/logoBlack.png" alt="myLogo"> -->
+    <img [class.DarkMode]="router.url !== '/imprint'" src="./assets/img/logo.png" alt="myLogo">
 
     <div class="links" [class.darkLinks]="darkMode">
         <a onclick="location.href='#home'">HOME</a>
