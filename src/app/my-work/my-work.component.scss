@@ -38,13 +38,23 @@
     margin-bottom: 32px;
 }
 
+.clickedButton {
+    background-color: #FA2759;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 340px) {
 
     .my-projects {
         img {
             width: 324px;
+
+            &:hover {
+                box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+                cursor: pointer;
+            }
         }
+
     }
 
     .my-work-container {
@@ -69,6 +79,12 @@
     .my-projects {
         img {
             width: 324px;
+
+            &:hover {
+                width: 326px;
+                box-shadow:  rgba(221, 221, 221, 0.596) 0px 5px 15px;
+                cursor: pointer;
+            }
         }
     }
 
@@ -94,6 +110,10 @@
 
         img {
             width: 270px;
+
+            &:hover {
+                width: 272px;
+            }
         }
     }
 }
@@ -105,6 +125,10 @@
 
         img {
             width: 320px;
+
+            &:hover {
+                width: 322px;
+            }
         }
     }
 
@@ -132,6 +156,10 @@
     .my-projects {
         img {
             width: 360px;
+
+            &:hover {
+                width: 362px;
+            }
         }
     }
 }
@@ -146,6 +174,10 @@
 
         img {
             width: 400px;
+
+            &:hover {
+                width: 402px;
+            }
         }
     }
 }

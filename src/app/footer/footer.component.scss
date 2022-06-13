@@ -29,6 +29,12 @@
     }
 }
 
+.link-container {
+    display: flex;
+    flex-direction: column;
+    // gap: 8px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 340px) {
     .footer {

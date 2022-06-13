@@ -12,4 +12,12 @@ export class MyWorkComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  changeColor
+  (skill) {
+    console.log(skill);
+    if (skill == 'all') {
+      document.getElementById('all').classList.add('clickedButton');
+    }
+  }
+
 }

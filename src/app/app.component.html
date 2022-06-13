@@ -1,10 +1,6 @@
-<app-menu [darkMode]="router.url == '/imprint'"></app-menu>
-<app-introduction [class.dont-show]="router.url == '/imprint'"></app-introduction>
-<app-my-skills [class.dont-show]="router.url == '/imprint'"></app-my-skills>
-<app-my-work [class.dont-show]="router.url == '/imprint'"></app-my-work>
-<app-about-me [class.dont-show]="router.url == '/imprint'"></app-about-me>
-<app-contact-me [class.dont-show]="router.url == '/imprint'"></app-contact-me>
-<app-footer [class.dont-show]="router.url == '/imprint'"></app-footer>
-<div [class.container]="router.url == '/imprint'">
-    <router-outlet></router-outlet>
+<app-menu [darkMode]="router.url != ''"></app-menu>
+<div [class.container]="router.url != ''">
+
 </div>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
