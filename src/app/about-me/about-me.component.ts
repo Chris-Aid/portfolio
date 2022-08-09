@@ -10,6 +10,24 @@ export class AboutMeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.animateJourney();
+  }
+
+  animateJourney() {
+    document.addEventListener('scroll', (e) => {
+      console.log(window.pageYOffset)
+      if (window.pageYOffset > 2000) {
+        let i = 4;
+
+          let journeyAnimation = setInterval(() => {
+            document.getElementById(`myJourney-` + i).classList.add('animateJourney');
+            i--;
+            if (i == 0) {
+              clearInterval(journeyAnimation);
+            }
+          }, 500);
+      }
+    });
   }
 
 }

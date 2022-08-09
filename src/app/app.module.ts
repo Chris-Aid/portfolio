@@ -12,6 +12,8 @@ import { MyWorkComponent } from './my-work/my-work.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { FooterComponent } from './footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,13 @@ import { FooterComponent } from './footer/footer.component';
     MyWorkComponent,
     AboutMeComponent,
     ContactMeComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

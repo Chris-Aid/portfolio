@@ -1,6 +1,5 @@
-<app-menu [darkMode]="router.url != ''"></app-menu>
-<div [class.container]="router.url != ''">
-
+<app-menu [darkMode]="this.router.url == '/imprint' || this.router.url == '/data-protection'"></app-menu>
+<div [ngClass]="{'container': this.router.url == '/imprint' || this.router.url == '/data-protection'}">
+    <router-outlet></router-outlet>
 </div>
-<router-outlet></router-outlet>
 <app-footer></app-footer>

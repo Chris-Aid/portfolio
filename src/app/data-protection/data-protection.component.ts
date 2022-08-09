@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataProtectionComponent implements OnInit {
 
+  dark: boolean;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.dark = true;
+    window.scrollTo(0, 0);
   }
 
 }

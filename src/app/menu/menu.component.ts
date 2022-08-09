@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+
+import { Component, ElementRef, Input, OnChanges, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,14 +7,26 @@ import { Router } from '@angular/router';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss']
 })
-export class MenuComponent implements OnInit {
-  @Input() darkMode = true;
+export class MenuComponent implements OnChanges {
+
+  // @ViewChild('menuElement') menuElement: ElementRef;
+
+  @Input() darkMode: boolean = false;
+  @Input() container = true;
+  @Input() imgColor: string;
   constructor(public router: Router) {
 
   }
 
-
-  ngOnInit(): void {
+  ngOnChanges() {
+    this.changeMenuBar();
   }
 
+  changeMenuBar() {
+    if (this.darkMode) {
+      this.imgColor = 'black'
+    } else {
+      this.imgColor = 'white'
+    }
+  }
 }

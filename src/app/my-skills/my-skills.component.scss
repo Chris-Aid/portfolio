@@ -54,6 +54,9 @@
     position: relative;
     display: flex;
     justify-content: center;
+    transform: translateX(-150px) translateY(-75px);
+    opacity: 0;
+
 }
 
 .skillTitles {
@@ -77,6 +80,24 @@
 
     img {
         height: 35px;
+    }
+}
+
+.animateSkills {
+    animation: flyingSkills 200ms ease;
+    transform: translateX(0px) translateY(0px);
+        opacity: 1;
+}
+
+@keyframes flyingSkills {
+    0% {
+        transform: translateX(-150px) translateY(-100px);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateX(0) translateY(0px);
+        opacity: 1;
     }
 }
 
@@ -128,6 +149,7 @@
         width: 28%;
         height: 16%;
 
+
         p {
             margin-top: 30px;
             font-size: 13px;
@@ -137,6 +159,7 @@
     .imageContainer {
         height: 60px;
         width: 60px;
+
 
         img {
             height: 35px;
@@ -149,14 +172,16 @@
     .skillContainer {
         width: 85%;
         gap: 24px;
-        
+
         p {
             margin-top: 22px;
             font-size: 16px;
         }
     }
+
     .singleSkill {
-        height: 18%;;
+        height: 18%;
+        ;
     }
 }
 
