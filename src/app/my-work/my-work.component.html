@@ -1,18 +1,57 @@
 <div id="projects" class="my-work-container">
     <h1>My work</h1>
     <div class="button-container">
-        <button onclick="changeColor('all')" id="all">All</button>
-        <button onclick="changeColor('angular')" id="angular">Angular</button>
-        <button onclick="changeColor('JS')" id="JavaScript">Java Script</button>
+        <button [ngClass]="all ? 'add-bg-color' : ''" (click)="all = true ; javascript = false ; angular = false" id="all">All</button>
+        <button [ngClass]="angular ? 'add-bg-color' : ''" (click)="angular = true ; javascript = false ; all = false" id="angular">Angular</button>
+        <button [ngClass]="javascript? 'add-bg-color' : ''" (click)="javascript = true ; angular = false ; all = false" id="JavaScript">Java Script</button>
     </div>
 
     <div class="my-projects">
 
-        <img src="./assets/img/join.png" alt="Join">
-        <img src="./assets/img/ElPolloLoco1.png" alt="El POllo Loco">
-        <img src="./assets/img/laptop.jpg" alt="laptop">
-        <img src="./assets/img/tablet.jpg" alt="tablet">
+        <div *ngIf="all || javascript" (mouseenter)="hovered1 = true" (mouseleave)="hovered1 = false" class="projects">
+            <div *ngIf="hovered1" id="project1" class="goToProject">
+                <h2 class="project-name">Join</h2>
+                <p>here you have to write the game description after games are displayed</p>
+                <button>Try out</button>
+            </div>
 
+            <div>
+                <img  id="img1" src="./assets/img/join.png" alt="Join">
+            </div>
+        </div>
+
+        <div *ngIf="all || javascript" (mouseenter)="hovered2 = true" (mouseleave)="hovered2 = false" class="projects">
+            <div *ngIf="hovered2" id="project2" class="goToProject">
+                <h2 class="project-name">El Pollo Loco</h2>
+                <p>here you have to write the game description after games are displayed</p>
+                <button>Try out</button>
+            </div>
+
+            <div>
+                <img  id="img2" src="./assets/img/ElPolloLoco1.png" alt="El Pollo Loco">
+            </div>
+        </div>
+
+        <div *ngIf="all || angular" (mouseenter)="hovered3 = true" (mouseleave)="hovered3 = false" class="projects">
+            <div *ngIf="hovered3" id="project3" class="goToProject">
+                <h2 class="project-name">Ring of Fire</h2>
+                <p>here you have to write the game description after games are displayed</p>
+                <button>Try out</button>
+            </div>
+            <div>
+                <img  id="img3" src="./assets/img/laptop.jpg" alt="laptop">
+            </div>
+        </div>
+
+        <div *ngIf="all || angular" (mouseenter)="hovered4 = true" (mouseleave)="hovered4 = false" class="projects">
+            <div  *ngIf="hovered4" id="project3"  id="project4" class="goToProject">
+                <h2 class="project-name">IN-City CRM</h2>
+                <p>here you have to write the game description after games are displayed</p>
+                <button>Try out</button>
+            </div>
+
+                <img id="img4"  src="./assets/img/tablet.jpg" alt="tablet">
+
+        </div>
     </div>
-
 </div>

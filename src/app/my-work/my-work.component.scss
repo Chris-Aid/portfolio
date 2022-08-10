@@ -42,17 +42,61 @@
     background-color: #FA2759;
 }
 
+.projects {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    // background-color: grey;
+}
+
+.goToProject {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // gap: 32px;
+    background-color: #3a3a3ad6;
+
+    button {
+        box-sizing: border-box;
+        background-color: transparent;
+        border: 2px solid #FA2759;
+        color: white;
+        height: 30%;
+        width: 30%;
+
+        &:hover {
+            background-color: #FA2759;
+            box-shadow: 0px 2px 2px #FA2759;
+            cursor: pointer;
+        }
+    }
+
+    h2 {
+        color: #FA2759;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    p {
+        width: 70%;
+        text-align: center;
+        font-size: 17px;
+    }
+}
+
+.add-bg-color {
+    background-color: #FA2759 !important;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 340px) {
 
     .my-projects {
         img {
             width: 324px;
-
-            &:hover {
-                box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
-                cursor: pointer;
-            }
         }
 
     }
@@ -79,12 +123,6 @@
     .my-projects {
         img {
             width: 324px;
-
-            &:hover {
-                width: 326px;
-                box-shadow:  rgba(221, 221, 221, 0.596) 0px 5px 15px;
-                cursor: pointer;
-            }
         }
     }
 

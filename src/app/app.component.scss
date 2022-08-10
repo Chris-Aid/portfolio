@@ -1,5 +1,17 @@
-.container {
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 150px;
+
+
+@media only screen and (min-width: 340px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 150px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-top: 150px;
+    }
 }

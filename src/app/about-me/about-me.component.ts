@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent implements OnInit {
-
+  intervalStopped = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -15,19 +15,24 @@ export class AboutMeComponent implements OnInit {
 
   animateJourney() {
     document.addEventListener('scroll', (e) => {
-      console.log(window.pageYOffset)
-      if (window.pageYOffset > 2000) {
-        let i = 4;
+      if (!this.intervalStopped) {
+
+        if (window.pageYOffset > 2000) {
+          let i = 4;
 
           let journeyAnimation = setInterval(() => {
             document.getElementById(`myJourney-` + i).classList.add('animateJourney');
             i--;
             if (i == 0) {
               clearInterval(journeyAnimation);
+              this.intervalStopped = true;
             }
           }, 500);
+        }
       }
+
     });
+
   }
 
 }
