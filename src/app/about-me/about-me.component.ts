@@ -23,7 +23,7 @@ export class AboutMeComponent implements OnInit {
           let journeyAnimation = setInterval(() => {
             document.getElementById(`myJourney-` + i).classList.add('animateJourney');
             i--;
-            if (i == 0) {
+            if (i <= 0) {
               clearInterval(journeyAnimation);
               this.intervalStopped = true;
             }

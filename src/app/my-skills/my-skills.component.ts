@@ -22,6 +22,7 @@ export class MySkillsComponent implements OnInit {
 
     document.addEventListener('scroll', () => {
       if(!this.intervalStopped) {
+        console.log(window.pageYOffset)
         let i = 8;
         let skillAnimation = setInterval(() => {
           if (window.pageYOffset > 300) {

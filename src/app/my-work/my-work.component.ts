@@ -19,16 +19,6 @@ export class MyWorkComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    setInterval(() => {
-      console.log(this.all, this.angular, this.javascript)
-    }, 200)
   }
 
-  changeColor
-    (skill: string) {
-    console.log(skill);
-    if (skill == 'all') {
-      document.getElementById('all').classList.add('clickedButton');
-    }
-  }
 }

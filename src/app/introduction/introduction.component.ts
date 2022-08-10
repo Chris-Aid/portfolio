@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { MovingDots } from '../moving-dots';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+
 
 @Component({
   selector: 'app-introduction',
@@ -8,9 +8,10 @@ import { MovingDots } from '../moving-dots';
 })
 export class IntroductionComponent implements OnInit {
 
+  // @ViewChild('form1') form1: ElementRef;
   constructor() { }
 
   ngOnInit(): void {
-    new MovingDots();
+    // this.form1.nativeElement.classList.add('geometric-froms')
   }
 }
