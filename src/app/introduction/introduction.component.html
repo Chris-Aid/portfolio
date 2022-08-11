@@ -1,45 +1,45 @@
-<div id="home" class="introduction">
-    <div class="intro-content">
-        <div class="textAndButton">
-            <div class="intro-text">
-                <h2 class="my-introduction">Hi, <br> I'm <span>Chris</span> Aidelsburger <br>
-                    Front End develop<p>e</p>r</h2>
+<div class="SectionContainer">
+    <div id="home" class="introduction">
+        <div class="intro-content">
+            <div class="textAndButton">
+                <div class="intro-text">
+                    <div id="introDiv"  [ngClass]="{'animateIntro' : loaded}" class="hide-into"></div>
+                    <div id="introDiv2" [ngClass]="{'animateIntro' : loaded2}" class="hide-into2"></div>
+                    <div id="introDiv3" [ngClass]="{'animateIntro' : loaded3}" class="hide-into3"></div>
+                    <div id="buttonHider4" [ngClass]="{'animateIntro' : loaded4}" class="hide-into4"></div>
+                        <h2 class="my-introduction">Hi,
+                            <br> I'm <span>Chris</span> Aidelsburger <br>
+                           Front End develop<p>e</p>r</h2>
+                </div>
+
+                <button  onclick="location.href='#contactMe'">Contact me</button>
             </div>
 
-            <button onclick="location.href='#contactMe'">Contact me</button>
+            <img src="./assets/img/profile-picture.jpg" alt="profile image">
         </div>
 
-        <img src="./assets/img/profile-picture.jpg" alt="profile image">
-    </div>
-
-    <div class="scrollDownArrow">
+        <div class="scrollDownArrow">
             <img onclick="location.href='#mySkills'" src="./assets/img/down-arrow.png" alt="arrow-down">
+        </div>
+
+        <div class="forms">
+
+            <!-- <img *ngFor="let _ of [].constructor(1); let i = index" [ngStyle]="randomNumber(i, 1)"
+                class="geometric-froms" src="/assets/img/dot1.png" alt="geometric-form"> -->
+            <!-- <img *ngFor="let _ of [].constructor(8); let i = index" [ngStyle]="randomNumber(i, 2)" class="geometric-froms" src="/assets/img/dot3.png" alt="geometric-form">
+            <img *ngFor="let _ of [].constructor(8); let i = index" [ngStyle]="randomNumber(i, 3)" class="geometric-froms" src="/assets/img/dot2.png" alt="geometric-form"> -->
+
+            <!-- <img *ngFor="let _ of [].constructor(8)" style="animation: movingForm 1s infinite ease-in-out;" [ngStyle]="randomNumber()" class="geometric-froms" src="/assets/img/dot1.png" alt="geometric-form">
+            <img *ngFor="let _ of [].constructor(8)" style="animation: movingForm 1s infinite ease-in-out;" [ngStyle]="randomNumber()" class="geometric-froms" src="/assets/img/dot3.png" alt="geometric-form">
+            <img *ngFor="let _ of [].constructor(8)" style="animation: movingForm 1s infinite ease-in-out;" [ngStyle]="randomNumber()" class="geometric-froms" src="/assets/img/dot2.png" alt="geometric-form"> -->
+        </div>
+
     </div>
 
-    <div class="forms">
-        <!-- <img *ngFor="let _ of [].constructor(2)"  class="geometric-froms" src="/assets/img/geometric-form.png" alt="geometric-form"> -->
-        <img class="geometric-froms" src="/assets/img/dot1.png" alt="geometric-form">
-        <img class="geometric-froms" src="/assets/img/dot2.png" alt="geometric-form">
-        <img class="geometric-froms" src="/assets/img/dot3.png" alt="geometric-form">
-        <img class="geometric-froms" src="/assets/img/dot1.png" alt="geometric-form">
-        <img class="geometric-froms" src="/assets/img/dot2.png" alt="geometric-form">
-        <img class="geometric-froms" src="/assets/img/dot3.png" alt="geometric-form">
-        <img class="geometric-froms" src="/assets/img/dot2.png" alt="geometric-form">
-        <img class="geometric-froms" src="/assets/img/dot3.png" alt="geometric-form">
-        <img class="geometric-froms" src="/assets/img/dot1.png" alt="geometric-form">
-        <img class="geometric-froms" src="/assets/img/dot2.png" alt="geometric-form">
-        <img class="geometric-froms" src="/assets/img/dot3.png" alt="geometric-form">
-        <img class="geometric-froms" src="/assets/img/dot1.png" alt="geometric-form">
-        <img class="geometric-froms" src="/assets/img/dot2.png" alt="geometric-form">
-        <img class="geometric-froms" src="/assets/img/dot3.png" alt="geometric-form">
-        <img class="geometric-froms" src="/assets/img/dot1.png" alt="geometric-form">
-        <img class="geometric-froms" src="/assets/img/dot2.png" alt="geometric-form">
-        <img class="geometric-froms" src="/assets/img/dot3.png" alt="geometric-form">
-    </div>
+    <app-my-skills class="section"></app-my-skills>
+    <app-my-work class="section"></app-my-work>
+    <app-about-me class="section"></app-about-me>
+    <app-contact-me class="section"></app-contact-me>
+
+
 </div>
-
-<app-my-skills></app-my-skills>
-<app-my-work></app-my-work>
-<app-about-me></app-about-me>
-<app-contact-me></app-contact-me>
-

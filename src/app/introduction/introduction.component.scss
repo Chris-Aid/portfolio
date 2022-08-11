@@ -23,6 +23,8 @@
         height: 75px;
         font-size: 18px;
         border: 2px solid #2DFCD8;
+        z-index: 232424525;
+        opacity: 1;
 
         &:hover {
             background-color: #2DFCD8;
@@ -38,7 +40,12 @@
     img {
         object-fit: cover;
         border-radius: 100%;
+        z-index: 9999999999999999999999999;
     }
+}
+
+.intro-text {
+    position: relative;
 }
 
 .scrollDownArrow {
@@ -106,9 +113,12 @@
 }
 
 .geometric-froms {
+    position: absolute;
+    // bottom: 30px;
     height: 20px;
-    animation: movingForm 5s infinite ease-in-out;
-    opacity: 0;
+    left: 10px;
+    // animation: movingForm 5s infinite ease-in-out;
+    opacity: 1;
 }
 
 
@@ -123,9 +133,64 @@
     }
 
     100% {
-        transform: translateY(-600px);
-        height: 70px;
+        transform: translateY(-700px);
+        height: 40px;
         opacity: 0;
+    }
+}
+
+.new-box {
+
+width: 100vw;
+    position: relative;
+}
+
+.hide-into {
+    background-color: black;
+    height: 65px;
+    width: 700px;
+    position: absolute;
+    z-index: 324345;
+}
+.hide-into2 {
+    background-color: black;
+    height: 65px;
+    width: 700px;
+    position: absolute;
+    top: 70px;
+    z-index: 324345;
+}
+
+.hide-into3 {
+    background-color: black;
+    height: 65px;
+    width: 700px;
+    position: absolute;
+    top: 135px;
+    z-index: 324345;
+}
+
+.hide-into4 {
+    background-color: black;
+    height: 200px;
+    width: 430px;
+    position: absolute;
+    top: 220px;
+    z-index: 324349995;
+}
+
+
+.animateIntro {
+    animation: movediv 3s  ease;
+}
+
+@keyframes movediv {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(1000px);
     }
 }
 
@@ -145,6 +210,7 @@
         h2 {
             font-size: 32px;
             margin: 0;
+            z-index: 232424525;
         }
 
         img {
@@ -174,6 +240,7 @@
         h2 {
             font-size: 32px;
             margin: 0;
+            z-index: 232424525;
         }
 
         img {
