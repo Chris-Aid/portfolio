@@ -41,15 +41,15 @@ export class IntroductionComponent implements OnInit {
       this.loaded3 = true;
     }, 2500);
 
-    setTimeout(() => {
-      this.loaded4 = true;
-    }, 2800);
+    // setTimeout(() => {
+    //   this.loaded4 = true;
+    // }, 2800);
 
     setTimeout(() => {
       introDiv3.style.display = 'none';
       buttonHider4.style.display = 'none';
 
-    }, 3500);
+    }, 4000);
 
   }
 
