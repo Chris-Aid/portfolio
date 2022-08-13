@@ -40,7 +40,7 @@
     img {
         object-fit: cover;
         border-radius: 100%;
-        z-index: 9999999999999999999999999;
+        z-index: 1000;
     }
 }
 
@@ -141,7 +141,7 @@
 
 .new-box {
 
-width: 100vw;
+    width: 100vw;
     position: relative;
 }
 
@@ -152,6 +152,7 @@ width: 100vw;
     position: absolute;
     z-index: 324345;
 }
+
 .hide-into2 {
     background-color: black;
     height: 65px;
@@ -222,6 +223,25 @@ width: 100vw;
     .textAndButton {
         align-items: center;
     }
+
+    .hide-into1 {
+        height: 32px;
+    }
+
+    .hide-into2 {
+        height: 36px;
+        top: 32px;
+    }
+
+    .hide-into3 {
+        height: 49px;
+        top: 66px;
+    }
+
+    .hide-into4 {
+        height: 150px;
+        top: 112px;
+    }
 }
 
 /* Extra small devices (phones, 340px and up) */
@@ -251,6 +271,25 @@ width: 100vw;
 
     .textAndButton {
         align-items: center;
+    }
+
+    .hide-into1 {
+        height: 32px;
+    }
+
+    .hide-into2 {
+        height: 36px;
+        top: 32px;
+    }
+
+    .hide-into3 {
+        height: 49px;
+        top: 66px;
+    }
+
+    .hide-into4 {
+        height: 150px;
+        top: 112px;
     }
 }
 

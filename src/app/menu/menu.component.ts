@@ -29,4 +29,15 @@ export class MenuComponent implements OnChanges {
       this.imgColor = 'white'
     }
   }
+
+  getStyleOfMenu() {
+    let background: string;
+    if (this.darkMode) {
+      background = 'white'
+    } else {
+      background = 'black'
+    }
+    return {'color': this.imgColor, 'background-color': background}
+
+  }
 }

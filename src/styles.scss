@@ -27,6 +27,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     right: 0;
     z-index: 12;
     border-left: 1px solid #FA2759;
+    z-index: 10000;
+}
+
+.cdk-overlay-connected-position-bounding-box {
+    top: 88px !important;
 }
 
 .mat-menu-panel {

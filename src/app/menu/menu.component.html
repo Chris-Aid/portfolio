@@ -2,7 +2,7 @@
   <!-- 
     <img *ngIf="!darkMode" routerLink="/" src="./assets/img/logo.png" alt="myLogo">
     <img *ngIf="darkMode" routerLink="/" src="./assets/img/logoBlack.png" alt="myLogo"> -->
-  <img [class.DarkMode]="this.router.url !== '/imprint' && this.router.url !== '/data-protection'" src="./assets/img/logo.png" alt="myLogo">
+  <img onclick="location.href='#home'" [class.DarkMode]="this.router.url !== '/imprint' && this.router.url !== '/data-protection'" src="./assets/img/logo.png" alt="myLogo">
 
   <div class="links" [class.darkLinks]="darkMode">
     <a onclick="location.href='#home'">HOME</a>
@@ -15,10 +15,10 @@
   </div>
   <img class="menu-img" src="assets/img/menu-{{imgColor}}.png" mat-button [matMenuTriggerFor]="menu">
   <mat-menu #menu="matMenu">
-    <button style="color: {{imgColor}}" mat-menu-item onclick="location.href='#home'">HOME</button>
-    <button style="color: {{imgColor}}" mat-menu-item onclick="location.href='#aboutMe'">ABOUT</button>
-    <button style="color: {{imgColor}}" mat-menu-item onclick="location.href='#projects'">PROJECTS</button>
-    <button style="color: {{imgColor}}" mat-menu-item onclick="location.href='#contactMe'">CONTACT</button>
+    <button [ngStyle]="getStyleOfMenu()" mat-menu-item onclick="location.href='#home'">HOME</button>
+    <button [ngStyle]="getStyleOfMenu()" mat-menu-item onclick="location.href='#aboutMe'">ABOUT</button>
+    <button [ngStyle]="getStyleOfMenu()" mat-menu-item onclick="location.href='#projects'">PROJECTS</button>
+    <button [ngStyle]="getStyleOfMenu()" mat-menu-item onclick="location.href='#contactMe'">CONTACT</button>
   </mat-menu>
 
 </header>
