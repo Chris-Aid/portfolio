@@ -21,6 +21,7 @@ export class ContactMeComponent implements OnInit {
   animateForm() {
     document.addEventListener('scroll', (e) => {
       if (!this.intervalStopped) {
+
         if (window.pageYOffset > 2550) {
           this.loaded1 = true
         } 

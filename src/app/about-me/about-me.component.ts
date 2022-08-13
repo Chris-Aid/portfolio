@@ -16,8 +16,8 @@ export class AboutMeComponent implements OnInit {
   animateJourney() {
     document.addEventListener('scroll', (e) => {
       if (!this.intervalStopped) {
-
-        if (window.pageYOffset > 2000) {
+        console.log(window.pageYOffset)
+        if (window.pageYOffset > 1750) {
           let i = 4;
 
           let journeyAnimation = setInterval(() => {
