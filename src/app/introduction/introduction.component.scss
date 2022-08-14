@@ -1,44 +1,9 @@
-.introduction {
-    background-color: black;
-    color: white;
+
+canvas {
+    display: flex;
     height: 100vh;
-    overflow: hidden;
-
-    p {
-        display: inline;
-        color: #2DFCD8;
-    }
-
-    // span {
-    //     display: inline-block;
-    //     opacity: 0 !important;
-    //     transition: all 10s ease-in-out;
-    //     transform: translateY(50px);
-
-    // }
-
-    // span.face {
-    //     opacity: 1;
-    //     transform: translateY(0px);
-    // }
-
-    button {
-        display: none;
-        cursor: pointer;
-        color: #2DFCD8;
-        box-sizing: border-box;
-        background-color: black;
-        margin-top: 98px;
-        font-size: 18px;
-        border: 2px solid #2DFCD8;
-        z-index: 232424525;
-        opacity: 1;
-
-        &:hover {
-            background-color: #2DFCD8;
-            color: white;
-        }
-    }
+    width: 100%;
+    background-color: black;
 }
 
 // .face {
@@ -105,6 +70,26 @@
 .textAndButton {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 300px;
+
+    button {
+        display: none;
+        cursor: pointer;
+        color: #2DFCD8;
+        box-sizing: border-box;
+        background-color: black;
+        margin-top: 98px;
+        font-size: 18px;
+        border: 2px solid #2DFCD8;
+        z-index: 232424525;
+        opacity: 1;
+
+        &:hover {
+            background-color: #2DFCD8;
+            color: white;
+        }
+    }
 }
 
 .dot {
@@ -158,41 +143,6 @@
     position: relative;
 }
 
-.hide-into {
-    background-color: black;
-    height: 65px;
-    width: 700px;
-    position: absolute;
-    z-index: 324345;
-}
-
-.hide-into2 {
-    background-color: black;
-    height: 65px;
-    width: 700px;
-    position: absolute;
-    top: 70px;
-    z-index: 324345;
-}
-
-.hide-into3 {
-    background-color: black;
-    height: 65px;
-    width: 700px;
-    position: absolute;
-    top: 135px;
-    z-index: 324345;
-}
-
-.hide-into4 {
-    background-color: black;
-    height: 200px;
-    width: 430px;
-    position: absolute;
-    top: 220px;
-    z-index: 324349995;
-}
-
 
 .animateIntro {
     animation: movediv 3s ease;
@@ -215,7 +165,6 @@
         align-items: center;
         padding-left: 0px;
         padding-right: 0px;
-        padding-top: 110px;
 
         button {
             margin-top: 32px;
@@ -264,7 +213,6 @@
         align-items: center;
         padding-left: 0px;
         padding-right: 0px;
-        padding-top: 110px;
 
         button {
             margin-top: 32px;
@@ -308,7 +256,7 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .introduction {
+    .textAndButton {
 
         h1 {
             font-size: 48px;
@@ -333,7 +281,7 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-    .introduction {
+    .textAndButton {
 
         h2 {
             font-size: 52px;
@@ -373,7 +321,6 @@
         flex-direction: row;
         padding-left: 100px;
         padding-right: 100px;
-        padding-top: 250px;
     }
 
     .textAndButton {
@@ -426,7 +373,6 @@
     .intro-content {
         padding-left: 150px;
         padding-right: 280px;
-        padding-top: 250px;
 
         img {
             height: 450px;
