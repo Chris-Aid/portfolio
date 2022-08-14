@@ -9,18 +9,26 @@
         color: #2DFCD8;
     }
 
-    span {
-        color: #FA2759;
-    }
+    // span {
+    //     display: inline-block;
+    //     opacity: 0 !important;
+    //     transition: all 10s ease-in-out;
+    //     transform: translateY(50px);
+
+    // }
+
+    // span.face {
+    //     opacity: 1;
+    //     transform: translateY(0px);
+    // }
 
     button {
+        display: none;
         cursor: pointer;
         color: #2DFCD8;
         box-sizing: border-box;
         background-color: black;
         margin-top: 98px;
-        width: 300px;
-        height: 75px;
         font-size: 18px;
         border: 2px solid #2DFCD8;
         z-index: 232424525;
@@ -32,6 +40,11 @@
         }
     }
 }
+
+// .face {
+//     opacity: 1;
+//     transform: translateY(0px);
+// }
 
 .intro-content {
     display: flex;
@@ -182,7 +195,7 @@
 
 
 .animateIntro {
-    animation: movediv 3s  ease;
+    animation: movediv 3s ease;
 }
 
 @keyframes movediv {
@@ -456,4 +469,13 @@
         gap: 12px;
     }
 
+}
+
+.initials {
+    h3 {
+        transform: rotate(-15deg);
+        font-family: 'Rubik Dirt', cursive;
+        color: #FA2759;
+        font-size: 300px;
+    }
 }
