@@ -16,7 +16,7 @@ setTimeout(() => {
   canvas.addEventListener('mousemove', function (event) {
     mouse.x = event.x;
     mouse.y = event.y;
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 6; i++) {
       spots.push(new Particle());
     }
   });
@@ -62,8 +62,8 @@ setTimeout(() => {
           ctx.beginPath()
           ctx.strokeStyle = spots[i].color;
           ctx.lineWidth = spots[i].size / 10;
-          ctx.moveTo(spots[i].x, spots[i].y)
-          ctx.lineTo(spots[j].x, spots[i].y)
+          ctx.moveTo(spots[j].x, spots[i].y)
+          ctx.lineTo(spots[i].x, spots[j].y)
           ctx.stroke();
         }
       }

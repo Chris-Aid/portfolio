@@ -6,11 +6,6 @@ canvas {
     background-color: black;
 }
 
-// .face {
-//     opacity: 1;
-//     transform: translateY(0px);
-// }
-
 .intro-content {
     display: flex;
 
@@ -34,36 +29,10 @@ canvas {
     justify-content: center;
     align-items: center;
     height: 120px;
-    filter: invert(100%);
 
     img {
-        height: 50px;
-        width: 50px;
+        width: 40px;
         cursor: pointer;
-        animation: scrollDown 1.5s linear infinite;
-    }
-}
-
-@keyframes scrollDown {
-
-    70% {
-        opacity: 0.3;
-        transform: translateY(0px);
-    }
-
-    80% {
-        opacity: 0.8;
-        transform: translateY(5px);
-    }
-
-    90% {
-        opacity: 0.8;
-        transform: translateY(0px);
-    }
-
-    100% {
-        opacity: 0.8;
-        transform: translateY(5px);
     }
 }
 
@@ -71,7 +40,6 @@ canvas {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 300px;
 
     button {
         display: none;
@@ -159,16 +127,12 @@ canvas {
 }
 
 /* Extra small devices (phones, 340px and down) */
-@media only screen and (max-width: 340px) {
+@media only screen and (min-width: 280px) {
     .intro-content {
         flex-direction: column-reverse;
         align-items: center;
         padding-left: 0px;
         padding-right: 0px;
-
-        button {
-            margin-top: 32px;
-        }
 
         h2 {
             font-size: 32px;
@@ -184,25 +148,12 @@ canvas {
 
     .textAndButton {
         align-items: center;
-    }
+        top: 210px;
 
-    .hide-into1 {
-        height: 32px;
-    }
-
-    .hide-into2 {
-        height: 36px;
-        top: 32px;
-    }
-
-    .hide-into3 {
-        height: 49px;
-        top: 66px;
-    }
-
-    .hide-into4 {
-        height: 150px;
-        top: 112px;
+        button {
+            height: 80px;
+            width: 170px;
+        }
     }
 }
 
@@ -232,25 +183,6 @@ canvas {
 
     .textAndButton {
         align-items: center;
-    }
-
-    .hide-into1 {
-        height: 32px;
-    }
-
-    .hide-into2 {
-        height: 36px;
-        top: 32px;
-    }
-
-    .hide-into3 {
-        height: 49px;
-        top: 66px;
-    }
-
-    .hide-into4 {
-        height: 150px;
-        top: 112px;
     }
 }
 
@@ -282,6 +214,7 @@ canvas {
 @media only screen and (min-width: 768px) {
 
     .textAndButton {
+        top: 300px;
 
         h2 {
             font-size: 52px;

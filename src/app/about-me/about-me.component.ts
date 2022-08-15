@@ -18,12 +18,12 @@ export class AboutMeComponent implements OnInit {
       if (!this.intervalStopped) {
         console.log(window.pageYOffset)
         if (window.pageYOffset > 1750) {
-          let i = 4;
+          let i = 1;
 
           let journeyAnimation = setInterval(() => {
             document.getElementById(`myJourney-` + i).classList.add('animateJourney');
-            i--;
-            if (i <= 0) {
+            i++;
+            if (i >= 5) {
               clearInterval(journeyAnimation);
               this.intervalStopped = true;
             }
