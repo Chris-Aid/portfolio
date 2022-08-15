@@ -1,4 +1,3 @@
-
 canvas {
     display: flex;
     height: 100vh;
@@ -24,15 +23,18 @@ canvas {
 .scrollDownArrow {
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120px;
 
     img {
         width: 40px;
         cursor: pointer;
+
+        &:hover {
+            filter: brightness(0.8);
+        }
     }
 }
 
@@ -47,7 +49,6 @@ canvas {
         color: #2DFCD8;
         box-sizing: border-box;
         background-color: black;
-        margin-top: 98px;
         font-size: 18px;
         border: 2px solid #2DFCD8;
         z-index: 232424525;
@@ -154,35 +155,6 @@ canvas {
             height: 80px;
             width: 170px;
         }
-    }
-}
-
-/* Extra small devices (phones, 340px and up) */
-@media only screen and (min-width: 340px) {
-    .intro-content {
-        flex-direction: column-reverse;
-        align-items: center;
-        padding-left: 0px;
-        padding-right: 0px;
-
-        button {
-            margin-top: 32px;
-        }
-
-        h2 {
-            font-size: 32px;
-            margin: 0;
-            z-index: 232424525;
-        }
-
-        img {
-            height: 210px;
-            width: 210px;
-        }
-    }
-
-    .textAndButton {
-        align-items: center;
     }
 }
 
@@ -315,7 +287,6 @@ canvas {
 }
 
 // following Queries are for some specific screens
-
 @media only screen and (max-width: 340px) and (max-width: 600px) and (min-height: 780px) {
 
     .intro-content {
@@ -346,15 +317,5 @@ canvas {
         margin-top: 48px;
         gap: 12px;
         gap: 12px;
-    }
-
-}
-
-.initials {
-    h3 {
-        transform: rotate(-15deg);
-        font-family: 'Rubik Dirt', cursive;
-        color: #FA2759;
-        font-size: 300px;
     }
 }

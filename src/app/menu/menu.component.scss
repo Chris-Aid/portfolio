@@ -71,65 +71,8 @@ header {
 }
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 340px) {
-
-    header {
-        padding-left: 32px;
-        padding-right: 32px;
-
-        a {
-            font-size: 14px;
-            margin-left: 12px;
-        }
-    }
-
-    .mat-menu-content {
-        padding-right: 32px;
-    }
-
-    .links {
-        display: none;
-    }
-
-    .navbar {
-        position: absolute;
-        right: 15px;
-    }
-
-    .navbar-toggler-icon {
-        height: 25px !important;
-        width: 20px !important;
-    }
-
-    .nav-link {
-        padding-top: 100px;
-        display: flex;
-        margin-right: -55px;
-    }
-
-    .bg-dark {
-        --bs-bg-opacity: 0 !important;
-    }
-
-    .dropdown-toggle::after {
-        content: none;
-    }
-
-    .navbar>.container-fluid {
-        justify-content: flex-end !important;
-        flex-wrap: unset !important;
-        flex-direction: row-reverse;
-        gap: 12px;
-    }
-
-    .dropdown-item {
-        width: auto !important;
-    }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 340px) {
+/* Extra small devices (phones, 280px and down) */
+@media only screen and (min-width: 280px) {
 
     header {
         padding-left: 32px;

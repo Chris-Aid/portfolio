@@ -91,8 +91,8 @@
 .add-bg-color {
     background-color: #FA2759 !important;
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 340px) {
+/* Extra small devices (phones, 280px and down) */
+@media only screen and (min-width: 280px) {
 
     .my-projects {
         img {
@@ -114,30 +114,6 @@
             height: 50px;
         }
 
-    }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 340px) {
-
-    .my-projects {
-        img {
-            width: 324px;
-        }
-    }
-
-    .my-work-container {
-        h1 {
-            margin-top: 32px;
-            margin-bottom: 16px;
-        }
-    }
-
-    .button-container {
-        button {
-            width: 100px;
-            height: 50px;
-        }
     }
 }
 

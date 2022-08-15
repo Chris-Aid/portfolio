@@ -1,4 +1,3 @@
-console.log('true')
 setTimeout(() => {
   const canvas = document.getElementById('canvas');
   let ctx = canvas.getContext('2d') ;
@@ -20,8 +19,6 @@ setTimeout(() => {
       spots.push(new Particle());
     }
   });
-  
-  
   
   class Particle {
   

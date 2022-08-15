@@ -90,8 +90,8 @@ opacity: 1;
 }
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 340px) {
+/* Extra small devices (phones, 280px and down) */
+@media only screen and (min-width: 280px) {
 
     .contact-me-section {
         align-items: center;
@@ -109,38 +109,6 @@ opacity: 1;
 
         h1 {
             font-size: 48px;
-            width: 85vw;
-        }
-
-        p {
-            font-size: 14px;
-            width: 85vw;
-        }
-
-        span {
-            color: #2DFCD8;
-        }
-    }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 340px) {
-    .contact-me-section {
-        align-items: center;
-    }
-
-    .mail-form {
-        width: 85vw;
-        margin-right: 0;
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h1 {
-            font-size: 32px;
             width: 85vw;
         }
 
@@ -255,5 +223,4 @@ opacity: 1;
     .mail-form {
         width: 35vw;
     }
-
 }
