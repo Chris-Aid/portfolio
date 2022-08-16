@@ -57,7 +57,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // gap: 32px;
     background-color: #3a3a3ad6;
 
     button {
@@ -91,6 +90,7 @@
 .add-bg-color {
     background-color: #FA2759 !important;
 }
+
 /* Extra small devices (phones, 280px and down) */
 @media only screen and (min-width: 280px) {
 
@@ -98,7 +98,6 @@
         img {
             width: 324px;
         }
-
     }
 
     .my-work-container {
@@ -113,7 +112,6 @@
             width: 100px;
             height: 50px;
         }
-
     }
 }
 

@@ -22,20 +22,19 @@ export class MySkillsComponent implements OnInit {
 
     document.addEventListener('scroll', () => {
       if(!this.intervalStopped) {
-        let i = 8;
+        let i = 0;
         let skillAnimation = setInterval(() => {
           if (window.pageYOffset > 300) {
   
             document.getElementById(`imageContainer-` + i).classList.add('animateSkills');
-            i--;
-            if (i <= -1) {
+            i++;
+            if (i >= 9) {
               clearInterval(skillAnimation);
               this.intervalStopped = true;
             }
           }
         }, 200);
       }
-  
     });
   }
 
