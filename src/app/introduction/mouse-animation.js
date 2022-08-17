@@ -55,12 +55,12 @@ setTimeout(() => {
         const dx = spots[i].x - spots[j].x;
         const dy = spots[i].y - spots[j].y;
         const distance = Math.sqrt(dx * dx + dy * dy);
-        if (distance < 10) {
+        if (distance < 40 && distance < 100) {
           ctx.beginPath()
           ctx.strokeStyle = spots[i].color;
           ctx.lineWidth = spots[i].size / 10;
-          ctx.moveTo(spots[j].x, spots[i].y)
-          ctx.lineTo(spots[i].x, spots[j].y)
+          ctx.moveTo(spots[i].x, spots[i].y)
+          ctx.lineTo(spots[j].x, spots[j].y)
           ctx.stroke();
         }
       }
