@@ -117,6 +117,11 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
+    .my-work-container {
+        height: 70vh;
+    }
+
     .my-projects {
         width: 100%;
 
@@ -140,6 +145,10 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .my-work-container {
+        height: 80vh;
+    }
+
     .my-projects {
         width: 90%;
 
@@ -173,6 +182,10 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    .my-work-container {
+        height: 90vh;
+    }
+
     .my-projects {
         img {
             width: 360px;
@@ -205,41 +218,41 @@
 
 
 .btn-image {
-  border-radius: 4px;
-//   background-color: #5ca1e1;
-//   border: none;
-//   color: #fff;
-  text-align: center;
-  font-size: 18px;
-//   padding: 16px;
-  width: 220px;
-  transition: all 0.5s;
-  cursor: pointer;
-//   box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-  overflow: hidden;
+    border-radius: 4px;
+    //   background-color: #5ca1e1;
+    //   border: none;
+    //   color: #fff;
+    text-align: center;
+    font-size: 18px;
+    //   padding: 16px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    //   box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    overflow: hidden;
 }
 
-.btn-image{
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+.btn-image {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
 }
 
 .btn-image:after {
-  content: '»';
-  position: absolute;
-  opacity: 0;  
-  right: -20px;
-  transition: 0.5s;
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    right: -20px;
+    transition: 0.5s;
 }
 
-.btn-image:hover{
-  padding-right: 24px;
-  padding-left:8px;
+.btn-image:hover {
+    padding-right: 24px;
+    padding-left: 8px;
 }
 
 .btn-image:hover:after {
-  opacity: 1;
-  right: 10px;
+    opacity: 1;
+    right: 10px;
 }
