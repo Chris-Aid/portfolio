@@ -38,7 +38,7 @@ canvas {
     }
 }
 
-.textAndButton {
+.wholeContent {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -69,8 +69,6 @@ canvas {
     position: absolute;
     transform: translateY(0);
     bottom: 0;
-
-
 }
 
 .forms {
@@ -81,10 +79,8 @@ canvas {
 
 .geometric-froms {
     position: absolute;
-    // bottom: 30px;
     height: 20px;
     left: 10px;
-    // animation: movingForm 5s infinite ease-in-out;
     opacity: 1;
 }
 
@@ -147,20 +143,32 @@ canvas {
         }
     }
 
-    .textAndButton {
+    .wholeContent {
         align-items: center;
-        top: 210px;
+        top: 135px;
+        padding-left: 12px;
+        padding-right: 12px;
 
         button {
             height: 80px;
             width: 170px;
         }
+
+        img {
+            margin-bottom: 24px;
+        }
+    }
+
+    .buttonAndText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .textAndButton {
+    .wholeContent {
 
         h1 {
             font-size: 48px;
@@ -185,7 +193,7 @@ canvas {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-    .textAndButton {
+    .wholeContent {
         top: 300px;
 
         h2 {
@@ -217,6 +225,13 @@ canvas {
             margin-top: 0;
         }
     }
+
+    .wholeContent {
+
+        img {
+            display: none;
+        }
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -228,7 +243,7 @@ canvas {
         padding-right: 100px;
     }
 
-    .textAndButton {
+    .wholeContent {
         align-items: flex-start;
     }
 }
@@ -247,7 +262,7 @@ canvas {
         }
     }
 
-    .textAndButton {
+    .wholeContent {
         align-items: flex-start;
     }
 }
@@ -264,7 +279,7 @@ canvas {
         }
     }
 
-    .textAndButton {
+    .wholeContent {
         align-items: flex-start;
 
         button {
@@ -296,7 +311,7 @@ canvas {
         }
     }
 
-    .textAndButton {
+    .wholeContent {
         margin-top: 48px;
         gap: 12px;
         gap: 12px;
@@ -313,9 +328,65 @@ canvas {
         }
     }
 
-    .textAndButton {
+    .wholeContent {
         margin-top: 48px;
         gap: 12px;
         gap: 12px;
+    }
+}
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 940px) and (max-device-height: 500px) and (orientation: landscape) {
+
+    .intro-content {
+        img {
+            height: 220px;
+            width: 220px;
+        }
+    }
+
+    .wholeContent {
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        top: 135px;
+        width: 75vw;
+
+        button {
+            height: 70px;
+            width: 150px;
+            margin: 0;
+        }
+
+        img {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 700px) and (max-device-height: 500px) and (orientation: landscape) {
+
+    .intro-content {
+        img {
+            height: 200px;
+            width: 200px;
+        }
+    }
+
+    .wholeContent {
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        top: 120px;
+        width: 80vw;
+
+        button {
+            height: 70px;
+            width: 150px;
+            margin: 0;
+        }
+
+        img {
+            margin-bottom: 24px;
+        }
     }
 }

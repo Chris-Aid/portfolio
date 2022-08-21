@@ -3,10 +3,10 @@
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding-top: 32px;
-    height: 100vh;
+    padding-left: 32px;
+    padding-right: 32px;
+    align-items: center;
 
     h1 {
         font-size: 64px;
@@ -50,16 +50,78 @@
             resize: none;
             outline: none;
         }
+    }
+}
+
+.contact-me-text {
+ width: 100%;
+
+ span {
+    color: #2DFCD8;
+    opacity: 1 !important;
+    padding: 0;
+    font-size: 14px;
+    display: initial;
+}
+}
+
+// .sec {
+//     opacity: 0;
+// }
+
+.animateContact {
+    animation: animateForm 3s ease;
+    opacity: 1;
+}
+
+@keyframes animateForm {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Extra small devices (phones, 280px and down) */
+@media only screen and (min-width: 280px) {
+
+    .submit-area {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .mail-form {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-size: 48px;
+            // width: 85vw;
+        }
+
+        p {
+            font-size: 14px;
+            // width: 85vw;
+        }
 
         button {
             color: #2DFCD8;
             box-sizing: border-box;
             background-color: black;
-            position: absolute;
+            margin-bottom: 32px;
+            margin-top: 12px;
             width: 200px;
             height: 50px;
-            bottom: -85px;
-            right: 0;
             font-size: 18px;
             border: 2px solid #2DFCD8;
 
@@ -71,156 +133,60 @@
     }
 }
 
-.sec {
-    opacity: 0;
-}
-
-.animateContact {
-animation: animateForm 3s ease;
-opacity: 1;
-}
-
-@keyframes animateForm {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-
-/* Extra small devices (phones, 280px and down) */
-@media only screen and (min-width: 280px) {
-
-    .contact-me-section {
-        align-items: center;
-    }
-
-    .mail-form {
-        width: 85vw;
-        margin-right: 0;
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h1 {
-            font-size: 48px;
-            width: 85vw;
-        }
-
-        p {
-            font-size: 14px;
-            width: 85vw;
-        }
-
-        span {
-            color: #2DFCD8;
-        }
-    }
-}
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-    .content {
-        h1 {
-            font-size: 32px;
-            width: 75vw;
-        }
-
-        p {
-            font-size: 14px;
-            width: 75vw;
-        }
-
-    }
-
-    .mail-form {
-        width: 75vw;
-        // margin-right: 0;
+    .content{
+        width: 80%;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+
     .content {
 
-        h1 {
-            font-size: 48px;
-            width: 65vw;
-        }
+        // h1 {
+        //     font-size: 48px;
+        //     width: 65vw;
+        // }
 
-        p {
-            font-size: 16px;
-            width: 65vw;
-        }
+        // p {
+        //     font-size: 16px;
+        //     width: 65vw;
+        // }
 
-        span {
-            color: #2DFCD8;
-        }
-    }
-
-    .mail-form {
-        width: 65vw;
+        // span {
+        //     color: #2DFCD8;
+        // }
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
-    .content {
-        h1 {
-            width: 55vw;
-        }
-
-        p {
-            width: 55vw;
-        }
-    }
-
-    .mail-form {
-        width: 55vw;
+    .content{
+        width: 60%;
     }
 }
 
 
 /* Extra large devices (large laptops and desktops, 1500px and up) */
 @media only screen and (min-width: 1500px) {
-    .content {
-        h1 {
-            width: 45vw;
-        }
 
-        p {
-            width: 45vw;
-        }
-    }
-
-    .mail-form {
-        width: 45vw;
+    .content{
+        width: 50%;
     }
 }
 
 /* Extra large devices (large desktops, 1650px and up) */
 @media only screen and (min-width: 1650px) {
-    .content {
-        h1 {
-            width: 35vw;
-        }
 
-        p {
-            width: 35vw;
-        }
-    }
-
-    .mail-form {
-        width: 35vw;
+    .content{
+        width: 40%;
     }
 }

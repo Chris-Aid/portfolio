@@ -4,6 +4,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 32px;
+    padding-top: 32px;
 
     h1 {
         font-weight: 500;
@@ -33,9 +35,8 @@
     display: flex;
     justify-content: center;
     gap: 32px;
-    margin-top: 32px;
     flex-wrap: wrap;
-    margin-bottom: 32px;
+    margin-top: 32px;
 }
 
 .clickedButton {
@@ -83,7 +84,7 @@
     p {
         width: 70%;
         text-align: center;
-        font-size: 17px;
+        // font-size: 17px;
     }
 }
 
@@ -94,15 +95,32 @@
 /* Extra small devices (phones, 280px and down) */
 @media only screen and (min-width: 280px) {
 
+    .goToProject {
+        font-size: 15px;
+
+        button {
+            height: 25%;
+            width: 30%;
+        }
+
+    }
+
+    .img-div {
+        width: 100%;
+    }
+
     .my-projects {
         img {
-            width: 324px;
+            width: 100%;
         }
     }
 
     .my-work-container {
+
+        padding-left: 12px;
+        padding-right: 12px;
+
         h1 {
-            margin-top: 32px;
             margin-bottom: 16px;
         }
     }
@@ -113,25 +131,47 @@
             height: 50px;
         }
     }
+
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            width: 90px;
+            height: 50px;
+        }
+    }
 }
+
+/* Extra small devices (phones, 360px and down) */
+@media only screen and (min-width: 360px) {
+    .my-work-container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
-    .my-work-container {
-        height: 70vh;
+    .img-div {
+        width: 40%;
+        padding-left: 0px;
+        padding-right: 0px;
     }
+
 
     .my-projects {
         width: 100%;
 
-        img {
-            width: 270px;
+        // img {
+        //     width: 270px;
 
-            &:hover {
-                width: 272px;
-            }
-        }
+        //     &:hover {
+        //         width: 272px;
+        //     }
+        // }
     }
 
     .goToProject {
@@ -145,20 +185,9 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .my-work-container {
-        height: 80vh;
-    }
 
     .my-projects {
         width: 90%;
-
-        img {
-            width: 320px;
-
-            &:hover {
-                width: 322px;
-            }
-        }
     }
 
     .button-container {
@@ -173,29 +202,11 @@
 @media only screen and (min-width: 992px) {
     .my-projects {
         width: 70%;
-
-        img {
-            width: 320px;
-        }
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .my-work-container {
-        height: 90vh;
-    }
-
-    .my-projects {
-        img {
-            width: 360px;
-
-            &:hover {
-                width: 362px;
-            }
-        }
-    }
-}
+@media only screen and (min-width: 1200px) {}
 
 /* Extra large devices (large laptops and desktops, 1500px and up) */
 @media only screen and (min-width: 1500px) {}
@@ -204,14 +215,6 @@
 @media only screen and (min-width: 1650px) {
     .my-projects {
         width: 60%;
-
-        img {
-            width: 400px;
-
-            &:hover {
-                width: 402px;
-            }
-        }
     }
 }
 
@@ -219,16 +222,11 @@
 
 .btn-image {
     border-radius: 4px;
-    //   background-color: #5ca1e1;
-    //   border: none;
-    //   color: #fff;
     text-align: center;
     font-size: 18px;
-    //   padding: 16px;
     width: 220px;
     transition: all 0.5s;
     cursor: pointer;
-    //   box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
     overflow: hidden;
 }
 

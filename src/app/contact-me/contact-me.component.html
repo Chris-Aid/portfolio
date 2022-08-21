@@ -1,7 +1,9 @@
 <div id="contactMe" class="contact-me-section">
     <div class="content">
-        <h1>Contact me.</h1>
-        <p>Get in touch via the form below, or by emailing <span>c.aidelsburger@gmx.de</span></p>
+        <div class="contact-me-text">
+            <h1>Contact me.</h1>
+            <p>Get in touch via the form below, or by emailing <span>c.aidelsburger@gmx.de</span></p>
+        </div>
         <form class="mail-form" action="http://christian-aidelsburger.developerakademie.net/send_mail/send_mail.php"
             method="post" id="contact-form">
             <div [ngClass]="{'animateContact' : loaded1}"  class="sec">
@@ -16,11 +18,11 @@
                 <p>Message</p>
                 <textarea name="message" id="user-message" cols="30" rows="10"
                     placeholder="Enter your message"></textarea>
-                <div class="submit-area">
-                    <button type="submit">Send</button>
-                </div>
             </div>
         </form>
+        <div class="submit-area">
+            <button type="submit">Send</button>
+        </div>
     </div>
 
 </div>

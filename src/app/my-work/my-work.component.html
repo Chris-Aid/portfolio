@@ -1,57 +1,70 @@
 <div id="projects" class="my-work-container">
     <h1>My work</h1>
     <div class="button-container">
-        <button [ngClass]="all ? 'add-bg-color' : ''" (click)="all = true ; javascript = false ; angular = false" id="all">All</button>
-        <button [ngClass]="angular ? 'add-bg-color' : ''" (click)="angular = true ; javascript = false ; all = false" id="angular">Angular</button>
-        <button [ngClass]="javascript? 'add-bg-color' : ''" (click)="javascript = true ; angular = false ; all = false" id="JavaScript">Java Script</button>
+        <button [ngClass]="all ? 'add-bg-color' : ''" (click)="all = true ; javascript = false ; angular = false"
+            id="all">All</button>
+        <button [ngClass]="angular ? 'add-bg-color' : ''" (click)="angular = true ; javascript = false ; all = false"
+            id="angular">Angular</button>
+        <button [ngClass]="javascript? 'add-bg-color' : ''" (click)="javascript = true ; angular = false ; all = false"
+            id="JavaScript">Java Script</button>
     </div>
 
     <div class="my-projects">
 
-        <div *ngIf="all || javascript" (mouseenter)="hovered1 = true" (mouseleave)="hovered1 = false" class="projects">
-            <div *ngIf="hovered1" id="project1" class="goToProject">
-                <h2 class="project-name">Join</h2>
-                <p>Join is a kanban-based management tool that helps you distribute tasks within the team.</p>
-                <button class="btn-image">Try out!</button>
-                <!-- <button>Try out</button> -->
-            </div>
+        <div class="img-div">
+            <div *ngIf="all || javascript" (mouseenter)="hovered1 = true" (mouseleave)="hovered1 = false"
+                class="projects">
+                <div *ngIf="hovered1" id="project1" class="goToProject">
+                    <h2 class="project-name">Join</h2>
+                    <p>Join is a kanban-based management tool that helps you distribute tasks within the team.</p>
+                    <button class="btn-image">Try out!</button>
+                    <!-- <button>Try out</button> -->
+                </div>
 
-            <div>
-                <img  id="img1" src="/assets/img/projects/join.jpeg" alt="Join">
+
+                <img id="img1" src="/assets/img/projects/join.jpeg" alt="Join">
             </div>
         </div>
 
-        <div *ngIf="all || javascript" (mouseenter)="hovered2 = true" (mouseleave)="hovered2 = false" class="projects">
-            <div *ngIf="hovered2" id="project2" class="goToProject">
-                <h2 class="project-name">El Pollo Loco</h2>
-                <p>El Pollo Loco is a small object-oriented Jump & Run Game, just give it a try! :)</p>
-                <button class="btn-image">Try out!</button>
-            </div>
+        <div class="img-div">
+            <div *ngIf="all || javascript" (mouseenter)="hovered2 = true" (mouseleave)="hovered2 = false"
+                class="projects">
+                <div *ngIf="hovered2" id="project2" class="goToProject">
+                    <h2 class="project-name">El Pollo Loco</h2>
+                    <p>El Pollo Loco is a small object-oriented Jump & Run Game, just give it a try! :)</p>
+                    <button class="btn-image">Try out!</button>
+                </div>
 
-            <div>
-                <img  id="img2" src="/assets/img/projects/el_pollo_loco.jpeg" alt="El Pollo Loco">
+
+                <img id="img2" src="/assets/img/projects/el_pollo_loco.jpeg" alt="El Pollo Loco">
             </div>
         </div>
 
-        <div *ngIf="all || angular" (mouseenter)="hovered3 = true" (mouseleave)="hovered3 = false" class="projects">
-            <div *ngIf="hovered3" id="project3" class="goToProject">
-                <h2 class="project-name">Ring of Fire</h2>
-                <p>Ring of Fire is a angular based card game that brings friends together even in times of corona and lockdowns.</p>
-                <button class="btn-image">Try out!</button>
-            </div>
-            <div>
-                <img  id="img3" src="/assets/img/projects/rof.jpeg" alt="laptop">
+        <div class="img-div">
+            <div *ngIf="all || angular" (mouseenter)="hovered3 = true" (mouseleave)="hovered3 = false" class="projects">
+                <div *ngIf="hovered3" id="project3" class="goToProject">
+                    <h2 class="project-name">Ring of Fire</h2>
+                    <p>Ring of Fire is a angular based card game that brings friends together even in times of corona
+                        and
+                        lockdowns.</p>
+                    <button class="btn-image">Try out!</button>
+                </div>
+
+                <img id="img3" src="/assets/img/projects/rof.jpeg" alt="laptop">
             </div>
         </div>
 
-        <div *ngIf="all || angular" (mouseenter)="hovered4 = true" (mouseleave)="hovered4 = false" class="projects">
-            <div  *ngIf="hovered4" id="project3"  id="project4" class="goToProject">
-                <h2 class="project-name">IN-City CRM</h2>
-                <p>This is a crm-application for a city-marketing company from Ingolstadt. The app has not yet been accomplished.</p>
-                <button class="btn-image">Try out!</button>
+        <div class="img-div">
+            <div *ngIf="all || angular" (mouseenter)="hovered4 = true" (mouseleave)="hovered4 = false" class="projects">
+                <div *ngIf="hovered4" id="project3" id="project4" class="goToProject">
+                    <h2 class="project-name">IN-City CRM</h2>
+                    <p>This is a crm-application for a city-marketing company from Ingolstadt. The app has not yet been
+                        accomplished.</p>
+                    <button class="btn-image">Try out!</button>
+                </div>
+                <img id="img4" src="/assets/img/projects/crm.jpeg" alt="tablet">
             </div>
 
-                <img id="img4"  src="/assets/img/projects/crm.jpeg" alt="tablet">
 
         </div>
     </div>

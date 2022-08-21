@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+// import { setInterval } from 'timers';
 // import { Script } from 'vm';
 
 @Component({
@@ -15,28 +15,25 @@ export class MySkillsComponent implements OnInit {
   skillTitles = ['Java script', 'Angular', 'HTML / CSS', 'SCRUM', 'Git', 'Design Thinking', 'Rest API', 'Test automation', 'Database'];
 
   ngOnInit(): void {
-    this.animateSkills();
+    this.observe();
   }
 
-  animateSkills() {
-
-    document.addEventListener('scroll', () => {
-      if(!this.intervalStopped) {
+  observe() {
+    let observer = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting === true) {
         let i = 0;
         let skillAnimation = setInterval(() => {
-          if (window.pageYOffset > 300) {
-  
-            document.getElementById(`imageContainer-` + i).classList.add('animateSkills');
-            i++;
-            if (i >= 9) {
-              clearInterval(skillAnimation);
-              this.intervalStopped = true;
-            }
+          document.getElementById(`imageContainer-` + i).classList.add('animateSkills');
+          i++;
+          if (i >= 9) {
+            clearInterval(skillAnimation);
+            this.intervalStopped = true;
           }
-        }, 200);
+        }, 200)
       }
-    });
-  }
+    }, { threshold: [1] });
 
+    observer.observe(document.querySelector(".subject-container"));
+  }
 }
 

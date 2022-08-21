@@ -10,7 +10,6 @@ body {
 }
 
 span {
-    padding-top: 18px;
     display: inline-block;
     opacity: 0;
     transition: all 0.25s ease;
@@ -75,6 +74,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     z-index: 12;
     border-left: 1px solid #FA2759;
     z-index: 10000;
+    padding-bottom: 0 !important;
 }
 
 .cdk-overlay-connected-position-bounding-box {
@@ -92,7 +92,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     }
 
     span {
-        font-size: 32px;
+        font-size: 29px;
+        padding-top: 6px;
+    }
+
+}
+
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (min-width: 400px) {
+
+    span {
+        font-size: 36px;
     }
 
 }
@@ -116,9 +126,23 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
     span {
         font-size: 64px;
+        padding-top: 26px;
     }
-    
+}
 
+@media only screen and (min-device-width: 700px) and (max-device-width: 940px) and (max-device-height: 500px) and (orientation: landscape) {
+    span {
+        font-size: 36px;
+        padding-top: 0;
+    }
+
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 700px) and (max-device-height: 500px) and (orientation: landscape) {
+    span {
+        font-size: 30px;
+        padding-top: 0;
+    }
 }
 
 

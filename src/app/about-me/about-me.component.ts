@@ -10,14 +10,14 @@ export class AboutMeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.animateJourney();
+    this.observe();
   }
 
-  animateJourney() {
-    document.addEventListener('scroll', (e) => {
-      if (!this.intervalStopped) {
-        if (window.pageYOffset > 1750) {
-          let i = 1;
+  observe() {
+    let observer = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting === true) {
+        console.log('Element is fully visible in screen');
+        let i = 1;
 
           let journeyAnimation = setInterval(() => {
             document.getElementById(`myJourney-` + i).classList.add('animateJourney');
@@ -27,11 +27,9 @@ export class AboutMeComponent implements OnInit {
               this.intervalStopped = true;
             }
           }, 500);
-        }
       }
+    }, { threshold: [1] });
 
-    });
-
+    observer.observe(document.querySelector(".introduction"));
   }
-
 }
