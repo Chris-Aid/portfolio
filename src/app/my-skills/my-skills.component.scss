@@ -53,22 +53,22 @@
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     transform: translateX(-150px) translateY(-75px);
     opacity: 0;
 
 }
 
 .skillTitles {
-    height: 50px;
-    position: absolute;
-    bottom: 20px;
+
+    p {
+        margin: 12px 0 0 0px !important;
+    }
 }
 
 .imageContainer {
     border-radius: 100%;
-    box-shadow: 0px 4px 4px rgba(197, 197, 197, 0.25);
-    height: 75px;
-    width: 75px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: white;
     position: absolute;
     top: -20;
@@ -85,7 +85,7 @@
 .animateSkills {
     animation: flyingSkills 200ms ease;
     transform: translateX(0px) translateY(0px);
-        opacity: 1;
+    opacity: 1;
 }
 
 @keyframes flyingSkills {
@@ -93,7 +93,7 @@
         transform: translateX(-150px) translateY(-100px);
         opacity: 0;
     }
-    
+
     100% {
         transform: translateX(0) translateY(0px);
         opacity: 1;
@@ -114,7 +114,7 @@
 
     .singleSkill {
         width: 28%;
-        height: 16%;
+        height: 18%;
 
         p {
             margin-top: 30px;
@@ -123,8 +123,8 @@
     }
 
     .imageContainer {
-        height: 60px;
-        width: 60px;
+        height: 55px;
+        width: 55px;
 
         img {
             height: 35px;
@@ -147,7 +147,6 @@
 
     .singleSkill {
         height: 18%;
-        ;
     }
 }
 
@@ -155,6 +154,11 @@
 @media only screen and (min-width: 768px) {
     .skillContainer {
         width: 75%;
+    }
+
+    .imageContainer {
+        height: 65px;
+        width: 65px;
     }
 }
 
@@ -182,4 +186,20 @@
     .skillContainer {
         width: 40%;
     }
+}
+
+@media only screen and (min-device-width: 400px) and (max-device-width: 940px) and (max-device-height: 500px) and (orientation: landscape) {
+
+    .subject-container {
+        padding-top: 18px;
+    }
+    .skillContainer {
+        height: 80vh;
+    }
+
+    .singleSkill {
+        width: 23%;
+        height: 20%;
+    }
+
 }

@@ -162,7 +162,8 @@ header {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     header {
-        padding-left: 68px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
     .mat-menu-content {
@@ -191,36 +192,33 @@ header {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    header {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
 
-    .mat-menu-content {
-        padding-right: 100px;
-    }
+    // .mat-menu-content {
+    //     padding-right: 100px;
+    // }
 }
 
 /* Extra large devices (large laptops and desktops, 1500px and up) */
 @media only screen and (min-width: 1500px) {
     header {
-        padding-left: 120px;
-        padding-right: 220px;
+        padding-left: 128px;
+        padding-right: 128px;
     }
 
-    .mat-menu-content {
-        padding-right: 220px;
-    }
+    // .mat-menu-content {
+    //     padding-right: 220px;
+    // }
 }
 
 /* Extra large devices (large desktops, 1650px and up) */
 @media only screen and (min-width: 1650px) {
-    header {
-        padding-left: 150px;
-        padding-right: 280px;
-    }
+//     header {
+//         padding-left: 150px;
+//         padding-right: 280px;
+//     }
 
-    .mat-menu-content {
-        padding-right: 280px;
-    }
+//     .mat-menu-content {
+//         padding-right: 280px;
+//     }
+// }
 }

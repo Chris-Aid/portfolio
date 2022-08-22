@@ -80,7 +80,7 @@ setTimeout(() => {
   window.addEventListener('resize', function () {
     canvas.width = innerWidth;
     canvas.height = innerHeight;
-    init();
+    // init();
   });
   
   window.addEventListener('mouseout', function (e) {
