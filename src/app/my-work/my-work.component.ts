@@ -68,4 +68,8 @@ export class MyWorkComponent implements OnInit {
     }
   }, 400)
   }
+
+  navigateTo(site) {
+    window.location.href = site;
+  }
 }
