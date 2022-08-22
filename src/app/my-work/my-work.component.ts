@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './my-work.component.html',
   styleUrls: ['./my-work.component.scss']
 })
+
 export class MyWorkComponent implements OnInit {
 
   hovered1: boolean = false;

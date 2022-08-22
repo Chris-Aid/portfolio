@@ -52,7 +52,7 @@ export class IntroductionComponent implements OnInit {
 
       if (number === 8 || number === 9 || number === 10 || number === 11 || number === 12) {
         span.classList.add('addFullColor');
-      } else if (number === 44) {
+      } else if (number === 43) {
         span.classList.add('addFullColorGreen');
       } else {
         span.classList.add('addColor');
