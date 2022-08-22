@@ -65,13 +65,13 @@
 }
 }
 
-// .sec {
-//     opacity: 0;
-// }
+.sec {
+    opacity: 0;
+}
 
 .animateContact {
     animation: animateForm 3s ease;
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 @keyframes animateForm {

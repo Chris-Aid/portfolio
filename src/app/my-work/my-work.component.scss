@@ -92,6 +92,27 @@
     background-color: #FA2759 !important;
 }
 
+.projectImage {
+    opacity: 0;
+}
+
+.animateProjects {
+    animation: animateProject 400ms ease;
+    opacity: 1;
+}
+
+@keyframes animateProject {
+    0% {
+        transform: rotateX(45deg) rotateY(45deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateX(0deg) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
 /* Extra small devices (phones, 280px and down) */
 @media only screen and (min-width: 280px) {
 

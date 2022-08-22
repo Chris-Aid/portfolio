@@ -20,6 +20,26 @@ export class MyWorkComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.observe();
+  }
+
+  observe() {
+    let observer = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting === true) {
+        console.log('true')
+        let i = 1;
+        let projectAnimation = setInterval(() => {
+          document.getElementById(`img` + i).classList.add('animateProjects');
+          i++;
+          if (i >= 5) {
+            clearInterval(projectAnimation);
+            this.intervalStopped = true;
+          }
+        }, 400)
+      }
+    }, { threshold: [1] });
+
+    observer.observe(document.querySelector(".button-container"));
   }
 
 }

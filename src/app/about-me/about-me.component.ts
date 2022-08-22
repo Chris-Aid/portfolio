@@ -16,7 +16,6 @@ export class AboutMeComponent implements OnInit {
   observe() {
     let observer = new IntersectionObserver(function (entries) {
       if (entries[0].isIntersecting === true) {
-        console.log('Element is fully visible in screen');
         let i = 1;
 
           let journeyAnimation = setInterval(() => {

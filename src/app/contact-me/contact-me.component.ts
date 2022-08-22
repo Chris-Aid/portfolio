@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -19,25 +19,31 @@ export class ContactMeComponent implements OnInit {
     // this.animateForm();
     this.observe();
 
+    // setInterval(() => {
+    //   console.log(this.loaded1)
+    // }, 300)
+
+
+
   }
 
-  animateForm() {
-    document.addEventListener('scroll', (e) => {
-      if (!this.intervalStopped) {
+  // animateForm() {
+  //   document.addEventListener('scroll', (e) => {
+  //     if (!this.intervalStopped) {
 
-        if (window.pageYOffset > 2800) {
-          this.loaded1 = true
-        } 
-         if (window.pageYOffset > 3000) {
-          this.loaded2 = true;
-        } 
-         if (window.pageYOffset > 3200) {
-          this.loaded3 = true;
-        }
-      }
+  //       if (window.pageYOffset > 2800) {
+  //         this.loaded1 = true
+  //       } 
+  //        if (window.pageYOffset > 3000) {
+  //         this.loaded2 = true;
+  //       } 
+  //        if (window.pageYOffset > 3200) {
+  //         this.loaded3 = true;
+  //       }
+  //     }
 
-    });
-  }
+  //   });
+  // }
 
   observe() {
     let observer = new IntersectionObserver(function (entries) {
@@ -49,6 +55,6 @@ export class ContactMeComponent implements OnInit {
       }
     }, { threshold: [1] });
 
-    observer.observe(document.querySelector(".content"));
+    observer.observe(document.querySelector(".contact-me-text"));
   }
 }

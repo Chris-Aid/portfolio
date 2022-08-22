@@ -399,3 +399,10 @@ canvas {
         }
     }
 }
+
+/* Query for tablets) */
+@media only screen and (min-width: 992px) and (max-height: 850px) {
+    .wholeContent {
+        top: 165px;
+    }
+}
