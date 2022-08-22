@@ -48,13 +48,20 @@ export class ContactMeComponent implements OnInit {
   observe() {
     let observer = new IntersectionObserver(function (entries) {
       if (entries[0].isIntersecting === true) {
+        let i = 1;
+        let formAnimation = setInterval(() => {
+          document.getElementById(`form` + i).classList.add('animateContact');
+          i++;
+          if (i == 4) {
+            clearInterval(formAnimation);
+          }
+        }, 500)
         console.log('Element is fully visible in screen');
-        this.loaded1 = true;
-        this.loaded2 = true;
-        this.loaded3 = true;
       }
     }, { threshold: [1] });
 
     observer.observe(document.querySelector(".contact-me-text"));
   }
+
+
 }
