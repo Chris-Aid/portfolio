@@ -13,6 +13,9 @@ export class MyWorkComponent implements OnInit {
   hovered3: boolean = false;
   hovered4: boolean = false;
 
+  end: number;
+  i: number = 1;
+
   all: boolean = true;
   angular: boolean = false;
   javascript: boolean = false;
@@ -24,14 +27,17 @@ export class MyWorkComponent implements OnInit {
   }
 
   observe() {
+    debugger;
+    if(this.all) { this.i = 1; this.end = 5 }
+    if(this. angular || this.javascript) { this.i = 1; this.end = 3 } 
+
     let observer = new IntersectionObserver(function (entries) {
       if (entries[0].isIntersecting === true) {
         console.log('true')
-        let i = 1;
         let projectAnimation = setInterval(() => {
-          document.getElementById(`img` + i).classList.add('animateProjects');
-          i++;
-          if (i >= 5) {
+          document.getElementById(`img` + this.i).classList.add('animateProjects');
+          this.i++;
+          if (this.i >= this.end) {
             clearInterval(projectAnimation);
             this.intervalStopped = true;
           }

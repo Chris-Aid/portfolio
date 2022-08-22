@@ -1,6 +1,6 @@
 <div id="projects" class="my-work-container">
     <h1>My work</h1>
-    <div class="button-container">
+    <div (click)="observe()" class="button-container">
         <button [ngClass]="all ? 'add-bg-color' : ''" (click)="all = true ; javascript = false ; angular = false"
             id="all">All</button>
         <button [ngClass]="angular ? 'add-bg-color' : ''" (click)="angular = true ; javascript = false ; all = false"
