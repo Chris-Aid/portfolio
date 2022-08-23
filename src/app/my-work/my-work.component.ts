@@ -27,7 +27,6 @@ export class MyWorkComponent implements OnInit {
   }
 
   observe() {
-    debugger;
     if(this.all) { this.i = 1; this.end = 5 }
     if(this. angular || this.javascript) { this.i = 1; this.end = 3 } 
 
