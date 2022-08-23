@@ -70,6 +70,6 @@ export class MyWorkComponent implements OnInit {
   }
 
   navigateTo(site) {
-    window.location.href = site;
+    window.open(site, "_blank");
   }
 }
