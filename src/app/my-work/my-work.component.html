@@ -1,11 +1,11 @@
 <div id="projects" class="my-work-container">
     <h1>My work</h1>
-    <div (click)="observe()" class="button-container">
-        <button [ngClass]="all ? 'add-bg-color' : ''" (click)="all = true ; javascript = false ; angular = false"
+    <div class="button-container">
+        <button [ngClass]="all ? 'add-bg-color' : ''" (click)="all = true ; javascript = false ; angular = false; changeTo('all')"
             id="all">All</button>
-        <button [ngClass]="angular ? 'add-bg-color' : ''" (click)="angular = true ; javascript = false ; all = false"
+        <button [ngClass]="angular ? 'add-bg-color' : ''" (click)="angular = true ; javascript = false ; all = false; changeTo('angular')"
             id="angular">Angular</button>
-        <button [ngClass]="javascript? 'add-bg-color' : ''" (click)="javascript = true ; angular = false ; all = false"
+        <button [ngClass]="javascript? 'add-bg-color' : ''" (click)="javascript = true ; angular = false ; all = false; changeTo('javascript')"
             id="JavaScript">Java Script</button>
     </div>
 
@@ -17,7 +17,7 @@
                 <div *ngIf="hovered1" id="project1" class="goToProject">
                     <h2 class="project-name">Join</h2>
                     <p>Join is a kanban-based management tool that helps you distribute tasks within the team.</p>
-                    <button class="btn-image">Try out!</button>
+                    <button (click)="navigateTo('https://join.christian-aidelsburger.de/')" class="btn-image">Try out!</button>
                     <!-- <button>Try out</button> -->
                 </div>
 
@@ -32,7 +32,7 @@
                 <div *ngIf="hovered2" id="project2" class="goToProject">
                     <h2 class="project-name">El Pollo Loco</h2>
                     <p>El Pollo Loco is a small object-oriented Jump & Run Game, just give it a try! :)</p>
-                    <button class="btn-image">Try out!</button>
+                    <button (click)="navigateTo('https://el-pollo-loco.christian-aidelsburger.de/')" class="btn-image">Try out!</button>
                 </div>
 
 
@@ -47,7 +47,7 @@
                     <p>Ring of Fire is a angular based card game that brings friends together even in times of corona
                         and
                         lockdowns.</p>
-                    <button class="btn-image">Try out!</button>
+                    <button (click)="navigateTo('https://ring-of-fire.christian-aidelsburger.de/')" class="btn-image">Try out!</button>
                 </div>
 
                 <img class="projectImage" id="img3" src="/assets/img/projects/rof.jpeg" alt="laptop">

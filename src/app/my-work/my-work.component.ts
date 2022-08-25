@@ -13,9 +13,6 @@ export class MyWorkComponent implements OnInit {
   hovered3: boolean = false;
   hovered4: boolean = false;
 
-  end: number;
-  i: number = 1;
-
   all: boolean = true;
   angular: boolean = false;
   javascript: boolean = false;
@@ -27,18 +24,15 @@ export class MyWorkComponent implements OnInit {
   }
 
   observe() {
-    if(this.all) { this.i = 1; this.end = 5 }
-    if(this. angular || this.javascript) { this.i = 1; this.end = 3 } 
-
     let observer = new IntersectionObserver(function (entries) {
       if (entries[0].isIntersecting === true) {
         console.log('true')
+        let i = 1;
         let projectAnimation = setInterval(() => {
-          document.getElementById(`img` + this.i).classList.add('animateProjects');
-          this.i++;
-          if (this.i >= this.end) {
+            document.getElementById(`img` + i).classList.add('animateProjects');
+          i++;
+          if (i == 5) {
             clearInterval(projectAnimation);
-            this.intervalStopped = true;
           }
         }, 400)
       }
@@ -47,4 +41,34 @@ export class MyWorkComponent implements OnInit {
     observer.observe(document.querySelector(".button-container"));
   }
 
+
+  changeTo(section) {
+    if(section == 'angular') {
+      let i = 3;
+      let end = 5;
+      this.startAnimation(i, end);
+    } else if (section == 'javascript'){
+      let i = 1;
+      let end = 3;
+      this.startAnimation(i, end);
+    } else {
+      let i = 1;
+      let end = 5;
+      this.startAnimation(i, end);
+    }
+  }
+
+  startAnimation(i, end) {
+    let AngularAnimation = setInterval(() => {
+      document.getElementById(`img` + i).classList.add('animateProjects');
+    i++;
+    if (i == end) {
+      clearInterval(AngularAnimation);
+    }
+  }, 400)
+  }
+
+  navigateTo(site) {
+    window.open(site, "_blank");
+  }
 }
