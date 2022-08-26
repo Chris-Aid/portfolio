@@ -103,12 +103,16 @@
 
 @keyframes animateProject {
     0% {
-        transform: rotateX(45deg) rotateY(45deg);
+        // transform: rotateX(45deg) rotateY(45deg);
+        transform: translateX(75px);
+        width: 60%;
         opacity: 0;
     }
 
     100% {
-        transform: rotateX(0deg) rotateY(0deg);
+        // transform: rotateX(0deg) rotateY(0deg);
+        transform: translateX(0px);
+        width: 100%;
         opacity: 1;
     }
 }

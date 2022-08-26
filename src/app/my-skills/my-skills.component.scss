@@ -90,7 +90,8 @@
 
 @keyframes flyingSkills {
     0% {
-        transform: translateX(-150px) translateY(-100px);
+        transform: translateX(150px) translateY(-100px);
+        height: 0%;
         opacity: 0;
     }
 
@@ -193,6 +194,7 @@
     .subject-container {
         padding-top: 18px;
     }
+
     .skillContainer {
         height: 80vh;
     }

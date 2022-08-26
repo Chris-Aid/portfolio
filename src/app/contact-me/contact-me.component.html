@@ -4,13 +4,13 @@
             <h1>Contact me.</h1>
             <p>Get in touch via the form below, or by emailing <span>c.aidelsburger@gmx.de</span></p>
         </div>
-        <form class="mail-form" action="https://christian-aidelsburger.de/send_mail/send_mail.php"
-            method="post" id="contact-form">
-            <div id="form{{1}}" [ngClass]="{'animateContact' : loaded1}"  class="sec">
+        <form class="mail-form" action="https://christian-aidelsburger.de/send_mail/send_mail.php" method="post"
+            id="contact-form">
+            <div id="form{{1}}" [ngClass]="{'animateContact' : loaded1}" class="sec">
                 <p>Name</p>
                 <input name="name" type="text" placeholder="Enter your name" id="user-name">
             </div>
-            <div id="form{{2}}" [ngClass]="{'animateContact' : loaded2}"  class="sec">
+            <div id="form{{2}}" [ngClass]="{'animateContact' : loaded2}" class="sec">
                 <p>Email address</p>
                 <input name="email" type="text" placeholder="Enter your email" id="user-email">
             </div>
@@ -19,10 +19,11 @@
                 <textarea name="message" id="user-message" cols="30" rows="10"
                     placeholder="Enter your message"></textarea>
             </div>
+            <div class="submit-area">
+                <button type="submit">Send</button>
+            </div>
         </form>
-        <div class="submit-area">
-            <button type="submit">Send</button>
-        </div>
+
     </div>
 
 </div>
