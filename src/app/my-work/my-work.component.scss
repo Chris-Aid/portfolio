@@ -239,7 +239,11 @@
 }
 
 /* Extra large devices (large laptops and desktops, 1500px and up) */
-@media only screen and (min-width: 1500px) {}
+@media only screen and (min-width: 1500px) {
+    // .my-projects {
+    //     height: 65vh;
+    // }
+}
 
 /* Extra large devices (large desktops, 1650px and up) */
 @media only screen and (min-width: 1650px) {

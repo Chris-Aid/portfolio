@@ -29,6 +29,6 @@ export class AboutMeComponent implements OnInit {
       }
     }, { threshold: [1] });
 
-    observer.observe(document.querySelector(".introduction"));
+    observer.observe(document.querySelector(".about-me-text"));
   }
 }

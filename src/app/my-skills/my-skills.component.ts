@@ -11,8 +11,8 @@ export class MySkillsComponent implements OnInit {
 
   intervalStopped = false;
 
-  skillImages = ['java script.png', 'angular.png', 'HTML-CSS.png', 'Group 226.png', 'Git-Icon-1788C 2.png', 'Group 20.png', 'rest-api.png', 'wordpress.png', 'database.png'];
-  skillTitles = ['Java script', 'Angular', 'HTML / CSS', 'SCRUM', 'Git', 'Design Thinking', 'Rest API', 'Wordpress', 'Database'];
+  skillImages = ['java script.png', 'angular.png', 'HTML-CSS.png', 'Group 226.png', 'Git-Icon-1788C 2.png', 'design-thinking.png', 'rest-api.png', 'wordpress.png', 'database1.png'];
+  skillTitles = ['Java script', 'Angular', 'HTML / CSS', 'SCRUM', 'Git', 'Design Thinking', 'Rest API', 'Wordpress', 'Firebase'];
 
   ngOnInit(): void {
     this.observe();
