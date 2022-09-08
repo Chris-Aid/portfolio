@@ -20,7 +20,7 @@ export class MyWorkComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.observe();
+    // this.observe();
   }
 
   observe() {

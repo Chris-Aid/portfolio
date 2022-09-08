@@ -117,6 +117,50 @@
     }
 }
 
+
+
+
+
+
+.projectContainer {
+    display: flex;
+    gap: 64px;
+
+    img {
+        width: 30vw;
+    }
+}
+
+.projectDescription {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    padding-top: 48px;
+
+    h2 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Extra small devices (phones, 280px and down) */
 @media only screen and (min-width: 280px) {
 
@@ -134,11 +178,11 @@
         width: 100%;
     }
 
-    .my-projects {
-        img {
-            width: 100%;
-        }
-    }
+    // .my-projects {
+    //     img {
+    //         width: 100%;
+    //     }
+    // }
 
     .my-work-container {
 
