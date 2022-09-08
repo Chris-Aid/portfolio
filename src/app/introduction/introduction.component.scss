@@ -5,12 +5,36 @@ canvas {
     background-color: black;
 }
 
+.textBackground {
+    height: 100vh;
+    width: 60vw;
+    position: absolute;
+    right: 0;
+    background-color: #181823;
+    // z-index: -1000;
+}
+
 .image-backgorund {
     position: absolute;
     top: 0;
     background-color: #afc2cf1e;
     height: 100vh;
     width: 60vw;
+}
+
+.about-me-text {
+    display: block !important;
+    color: white;
+    font-size: 22px;
+    margin-left: 120px;
+    margin-top: 30px;
+    z-index: 2000;
+    width: 600px;
+    line-height: 30px;
+}
+
+.hideText {
+    display: none;
 }
 
 .intro-content {
@@ -44,6 +68,9 @@ canvas {
 
 .intro-text {
     position: relative;
+
+    z-index: 12;
+
 }
 
 .scrollDownArrow {
@@ -128,6 +155,7 @@ canvas {
 
 /* Extra small devices (phones, 340px and down) */
 @media only screen and (min-width: 280px) {
+
     .intro-content {
         flex-direction: column;
         align-items: center;
@@ -143,7 +171,10 @@ canvas {
         img {
             height: auto;
             width: 95vw;
-            box-shadow: #2dfcd8 2px 3px 4px;
+            z-index: 12;
+
+            // border-radius: 100%;
+            // box-shadow: #2dfcd8 2px 3px 4px;
         }
 
 
@@ -154,22 +185,48 @@ canvas {
         }
     }
 
+    .about-me-text {
+        font-size: 16px;
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 90vw;
+    }
+
+    .textBackground {
+        width: 100vw;
+    }
+
     .buttonAndText {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 32px;
+        margin-top: 0px;
         height: 40vh;
     }
 }
 
+
+/* Small devices (portrait tablets and large phones, 400px and up) */
+@media only screen and (min-width: 400px) {
+
+    .about-me-text {
+        width: 75vw;
+    }
+}
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
+    .about-me-text {
+        width: 500px;
+    }
 
     .intro-content {
 
         img {
-            width: 70vw;
+            margin-top: 64px;
+            width: 60vw;
         }
     }
 }
@@ -180,10 +237,17 @@ canvas {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
+    .intro-text {
+        h1 {
+            margin-top: -120px;
+        }
+    }
+
     .intro-content {
 
         img {
-            width: 60vw;
+            margin-top: 140px;
+            width: 650px;
         }
     }
 
@@ -193,6 +257,8 @@ canvas {
             margin-top: 0;
         }
     }
+
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -204,6 +270,7 @@ canvas {
             border-radius: unset;
             width: 50vw;
             height: auto;
+            margin: 0;
         }
     }
 
@@ -212,12 +279,33 @@ canvas {
         align-items: flex-start;
         height: 50vh;
     }
+
+    .intro-text {
+        h1 {
+            margin: 0;
+        }
+    }
+
+    .about-me-text {
+        font-size: 22px;
+        margin-left: 120px;
+        margin-top: 30px;
+        width: 600px;
+        line-height: 30px;
+    }
+
+    .textBackground {
+        width: 60vw;
+        background-color: #181823;
+    }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1300px and up) */
 @media only screen and (min-width: 1300px) {
     .intro-content {
         flex-direction: row;
+
         h2 {
             font-size: 64px;
         }

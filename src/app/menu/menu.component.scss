@@ -44,6 +44,14 @@ header {
     }
 }
 
+.headerBackground {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background-color: #181823;
+    z-index: -1233;
+}
+
 .menu-img {
     height: 42px !important;
 }
@@ -73,6 +81,10 @@ header {
 
 /* Extra small devices (phones, 280px and down) */
 @media only screen and (min-width: 280px) {
+
+    .headerBackground {
+        width: 100vw;
+    }
 
     .menu-img {
         height: 35px !important;
@@ -193,9 +205,10 @@ header {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
-    // .mat-menu-content {
-    //     padding-right: 100px;
-    // }
+
+    .headerBackground {
+        width: 60vw;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1500px and up) */

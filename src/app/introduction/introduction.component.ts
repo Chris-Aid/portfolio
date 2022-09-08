@@ -1,4 +1,5 @@
 import { Component, OnInit, } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -8,7 +9,7 @@ import { Component, OnInit, } from '@angular/core';
 })
 export class IntroductionComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit(): void {
     this.animateText();
@@ -22,7 +23,7 @@ export class IntroductionComponent implements OnInit {
 
     introText.textContent = "";
     for (let i = 0; i < splitText.length; i++) {
-      if (splitText[i] == ',') {
+      if (splitText[i] == ' ') {
         introText.innerHTML += '<span>' + splitText[i] + '</span>' + '<br>';
       } else {
         introText.innerHTML += '<span>' + splitText[i] + '</span>';
@@ -50,7 +51,7 @@ export class IntroductionComponent implements OnInit {
     let addColor = setInterval(() => {
       const span = document.querySelectorAll('span')[number];
 
-      if (number === 8 || number === 9 || number === 10 || number === 11 || number === 12) {
+      if (number === 5 || number === 6 || number === 7 || number ===8 || number === 9) {
         span.classList.add('addFullColor');
       } else if (number === 43) {
         span.classList.add('addFullColorGreen');
@@ -61,10 +62,17 @@ export class IntroductionComponent implements OnInit {
       number++;
       if (number === splitText.length) {
         clearInterval(addColor);
-        this.styleContactButton();
+        // this.styleContactButton();
+        this.showMyText();
         number = 0;
       }
     }, 50);
+  }
+
+  showMyText() {
+    console.log('now')
+    let txt = document.getElementById('introText');
+    txt.classList.add('about-me-text');
   }
 
   styleContactButton() {
