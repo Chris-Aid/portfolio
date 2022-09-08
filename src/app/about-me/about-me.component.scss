@@ -89,7 +89,7 @@
 
 @keyframes flyingJourney {
     0% {
-        transform: translateX(1000px);
+        transform: translateX(200px);
         opacity: 0;
     }
 
@@ -125,8 +125,8 @@
         margin-bottom: 32px;
 
         img {
-            height: 210px;
-            width: 210px;
+            height: 260px;
+            width: 260px;
         }
     }
 

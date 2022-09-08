@@ -38,7 +38,6 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "src/app/introduction/mouse-animation.js"
             ]
           },
           "configurations": {

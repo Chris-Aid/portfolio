@@ -20,13 +20,12 @@ export class MyWorkComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.observe();
+    // this.observe();
   }
 
   observe() {
     let observer = new IntersectionObserver(function (entries) {
       if (entries[0].isIntersecting === true) {
-        console.log('true')
         let i = 1;
         let projectAnimation = setInterval(() => {
             document.getElementById(`img` + i).classList.add('animateProjects');
