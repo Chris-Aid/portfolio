@@ -11,10 +11,10 @@ export class MySkillsComponent implements OnInit {
 
   intervalStopped = false;
 
-  mainImages = ['angular.png', 'js.png', 'html.png'];
+  mainImages = ['a.png', 'js.png', 'html.png'];
   secondImages = ['scrum.png', 'git.png', 'design.png'];
   lastImages = ['api.png', 'wp.png', 'firebase.png'];
-  mainTitles = ['JAVA SCRIPT', 'ANGULAR', 'HTML / CSS'];
+  mainTitles = ['ANGULAR', 'JAVA SCRIPT', 'HTML / CSS'];
   secondTitles = ['SCRUM', 'GIT', 'DESIGN'];
   lastTitles = ['REST API', 'WORDPRESS', 'FIREBASE'];
 

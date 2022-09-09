@@ -81,6 +81,7 @@ canvas {
         align-items: center;
         padding-left: 0px;
         padding-right: 0px;
+        margin-top: 32px;
 
         h2 {
             font-size: 32px;
@@ -92,6 +93,7 @@ canvas {
             height: auto;
             width: 90vw;
             z-index: 12;
+            margin-top: 32px;
         }
 
 
@@ -144,6 +146,7 @@ canvas {
         img {
             margin-top: 64px;
             width: 60vw;
+            margin-top: 0;
         }
     }
 }
@@ -158,6 +161,7 @@ canvas {
     }
 
     .intro-content {
+        margin-top: 0;
 
         img {
             margin-top: 140px;

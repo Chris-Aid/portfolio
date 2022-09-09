@@ -24,8 +24,7 @@ export class ContactMeComponent implements OnInit {
           if (i == 4) {
             clearInterval(formAnimation);
           }
-        }, 200)
-        console.log('Element is fully visible in screen');
+        }, 200);
       }
     }, { threshold: [1] });
 

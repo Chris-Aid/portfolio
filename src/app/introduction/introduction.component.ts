@@ -69,7 +69,6 @@ export class IntroductionComponent implements OnInit {
   }
 
   showMyText() {
-    console.log('now')
     let txt = document.getElementById('introText');
     txt.classList.add('about-me-text');
   }
