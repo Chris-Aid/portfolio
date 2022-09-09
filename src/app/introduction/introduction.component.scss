@@ -10,8 +10,7 @@ canvas {
     width: 60vw;
     position: absolute;
     right: 0;
-    background-color: #181823;
-    // z-index: -1000;
+    background-color: #080808;
 }
 
 .image-backgorund {
@@ -39,23 +38,6 @@ canvas {
 
 .intro-content {
     display: flex;
-
-    button {
-        display: none;
-        cursor: pointer;
-        color: #2DFCD8;
-        box-sizing: border-box;
-        background-color: black;
-        font-size: 18px;
-        border: 2px solid #2DFCD8;
-        z-index: 232424525;
-        opacity: 1;
-
-        &:hover {
-            background-color: #2DFCD8;
-            color: white;
-        }
-    }
 }
 
 .introduction {
@@ -91,68 +73,6 @@ canvas {
     }
 }
 
-.dot {
-    background-color: white;
-    border-radius: 100%;
-    height: 10px;
-    width: 10px;
-    position: absolute;
-    transform: translateY(0);
-    bottom: 0;
-}
-
-.forms {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.geometric-froms {
-    position: absolute;
-    height: 20px;
-    left: 10px;
-    opacity: 1;
-}
-
-
-@keyframes movingForm {
-    0% {
-        transform: translateY(0);
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(-700px);
-        height: 40px;
-        opacity: 0;
-    }
-}
-
-.new-box {
-
-    width: 100vw;
-    position: relative;
-}
-
-
-.animateIntro {
-    animation: movediv 3s ease;
-}
-
-@keyframes movediv {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(1000px);
-    }
-}
-
 /* Extra small devices (phones, 340px and down) */
 @media only screen and (min-width: 280px) {
 
@@ -172,9 +92,6 @@ canvas {
             height: auto;
             width: 95vw;
             z-index: 12;
-
-            // border-radius: 100%;
-            // box-shadow: #2dfcd8 2px 3px 4px;
         }
 
 
@@ -230,9 +147,6 @@ canvas {
         }
     }
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -296,7 +210,6 @@ canvas {
 
     .textBackground {
         width: 60vw;
-        background-color: #181823;
     }
 
 }
@@ -392,7 +305,6 @@ canvas {
         }
     }
 }
-
 
 /* Query for tablets) */
 @media only screen and (min-width: 992px) and (max-height: 850px) {

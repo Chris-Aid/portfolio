@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // background-color: #1A1A1A;
     background-color: black;
     color: white;
     padding-top: 32px;
@@ -35,7 +34,7 @@
 }
 
 .my-journey {
-    border-top: 1px solid #2DFCD8;
+    border-top: 1px solid #eeba2b;
     display: flex;
     justify-content: space-between;
     padding-top: 96px;
@@ -45,7 +44,7 @@
     height: 65px;
     width: 65px;
     border-radius: 100%;
-    background-color: #2DFCD8;
+    background-color: #eeba2b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,7 +99,7 @@
     }
 }
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 280px and down) */
 @media only screen and (min-width: 280px) {
 
     .first-box {
@@ -161,6 +160,12 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
+    .about-me-section {
+        height: 100vh;
+        justify-content: center;
+    }
+
     .my-journey {
         flex-direction: row;
         gap: 24px;

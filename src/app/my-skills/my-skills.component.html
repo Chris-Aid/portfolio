@@ -1,19 +1,37 @@
 <div id="mySkills" class="mySkillsContent">
-    <div class="subject-container">
-        <h1>My Skills</h1>
-    </div>
 
-    <div class="mySkills-section">
-        <div id="el" class="skillContainer">
-            <div id="imageContainer-{{i}}" *ngFor="let image of skillImages; let i = index" class="singleSkill">
-                <div class="imageContainer">
-                    <img src="./assets/img/skills/{{image}}" alt="imagesOfSkills">
+    <div class="skillAndDescription">
+
+        <div class="description">
+            <h1>SKILLSET</h1>
+            <p>Due to a variety of projects I implemented, I built up a broad skillset in front-end development that is
+                constantly growing. I would love to invite you to test my projects below.</p>
+
+            <button onclick="location.href='#projects'">MY PORTFOLIO</button>
+        </div>
+        <div class="allSkills">
+            <div class="container1 skillContainer">
+                <div class="skillset" *ngFor="let skill of mainImages; let i = index">
+                    <img id="imageContainer-{{i}}" class="skill" src="./assets/img/skills/{{skill}}"
+                        alt="imagesOfSkills">
+                    <p>{{mainTitles[i]}}</p>
                 </div>
-                <div class="skillTitles">
-                    <p>{{skillTitles[i]}}</p>
+            </div>
+            <div class="container2 skillContainer">
+                <div class="skillset" *ngFor="let skill of secondImages; let i = index">
+                    <img id="secondContainer-{{i}}" class="skill" src="./assets/img/skills/{{skill}}"
+                        alt="imagesOfSkills">
+                    <p>{{secondTitles[i]}}</p>
                 </div>
-    
+            </div>
+            <div class="container3 skillContainer">
+                <div class="skillset" *ngFor="let skill of lastImages; let i = index">
+                    <img id="thirdContainer-{{i}}" class="skill" src="./assets/img/skills/{{skill}}"
+                        alt="imagesOfSkills">
+                    <p>{{lastTitles[i]}}</p>
+                </div>
             </div>
         </div>
+
     </div>
 </div>

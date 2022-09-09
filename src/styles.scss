@@ -4,11 +4,11 @@
     height: 10px; /* Mostly for horizontal scrollbars */
   }
   ::-webkit-scrollbar-thumb { /* Foreground */
-    background: #2DFCD8;
+    background: #eeba2b;
     border-radius: 10px;
   }
   ::-webkit-scrollbar-thumb:hover { /* Foreground */
-    background: #2dfcad;
+    background: #ffd561;
 
   }
   ::-webkit-scrollbar-track { /* Background */
@@ -43,8 +43,8 @@ span.addColor {
     animation: addColor 1s ease-in-out;
 }
 
-span.addFullColorGreen {
-    color: #2DFCD8;
+span.addFullColorYellow {
+    color: #fcf82d;
 }
 
 @keyframes addColor {
@@ -52,7 +52,7 @@ span.addFullColorGreen {
         color: white;
     }
     50% {
-        color: #FA2759;
+        color: #eeba2b;
     }
 
     100% {
@@ -61,23 +61,20 @@ span.addFullColorGreen {
 }
 
 span.addFullColor {
-    color: #FA2759;
+    color: #eeba2b;
 }
 
 .showButton {
 display: flex !important;
 justify-content: center;
 align-items: center;
-    // animation: popButton 2s ease;
 }
 
 .mat-focus-indicator {
     background-color: transparent;
-    // color: white;
     display: flex !important;
     justify-content: flex-end !important;
     padding-right: 0 !important;
-    // opacity: 0.5;
 }
 
 html, body { height: 100%; }
@@ -144,7 +141,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 992px and up) */
 @media only screen and (min-width: 992px) {
 
     span {
@@ -174,15 +171,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     }
 }
 
-
-
-
 @media only screen and (min-device-width: 700px) and (max-device-width: 940px) and (max-device-height: 500px) and (orientation: landscape) {
     span {
         font-size: 45px;
         padding-top: 0;
     }
-
 }
 
 @media only screen and (min-device-width: 480px) and (max-device-width: 700px) and (max-device-height: 500px) and (orientation: landscape) {

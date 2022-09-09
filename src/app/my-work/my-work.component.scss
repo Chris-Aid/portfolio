@@ -1,5 +1,5 @@
 .my-work-container {
-    background-color: black;
+    background-color: #080808;
     color: white;
     display: flex;
     align-items: center;
@@ -8,116 +8,21 @@
     padding-top: 32px;
 
     h1 {
-        font-weight: 500;
+        font-size: 64px;
     }
 }
 
-.button-container {
-    display: flex;
-    gap: 12px;
-
-    button {
-        box-sizing: border-box;
-        background-color: rgb(0, 0, 0);
-        border: 2px solid #FA2759;
-        color: white;
-        width: 128px;
-        height: 70px;
-
-        &:hover {
-            background-color: #fa275823;
-            cursor: pointer;
-        }
-    }
-}
 
 .my-projects {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     gap: 32px;
-    flex-wrap: wrap;
     margin-top: 32px;
 }
 
-.clickedButton {
-    background-color: #FA2759;
-}
-
-.projects {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    // background-color: grey;
-}
-
-.goToProject {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #3a3a3ad6;
-
-    button {
-        box-sizing: border-box;
-        background-color: transparent;
-        border: 2px solid #FA2759;
-        color: white;
-        height: 30%;
-        width: 30%;
-
-        &:hover {
-            background-color: #FA2759;
-            box-shadow: 0px 2px 2px #FA2759;
-            cursor: pointer;
-        }
-    }
-
-    h2 {
-        color: #FA2759;
-        font-size: 22px;
-        font-weight: 700;
-    }
-
-    p {
-        width: 70%;
-        text-align: center;
-        // font-size: 17px;
-    }
-}
-
-.add-bg-color {
-    background-color: #FA2759 !important;
-}
-
-.projectImage {
-    opacity: 0;
-}
-
-.animateProjects {
-    animation: animateProject 1200ms ease;
-    opacity: 1;
-}
-
-@keyframes animateProject {
-    0% {
-        // transform: rotateX(45deg) rotateY(45deg);
-        transform: translateX(75px);
-        width: 60%;
-        opacity: 0;
-    }
-
-    100% {
-        // transform: rotateX(0deg) rotateY(0deg);
-        transform: translateX(0px);
-        width: 100%;
-        opacity: 1;
-    }
-}
-
 .imageContainer {
+    cursor: pointer;
     width: 500px;
     display: flex;
     justify-content: center;
@@ -138,24 +43,23 @@
 }
 
 .rof {
-    
+
     width: 530px;
     margin-left: 48px;
 
 }
 
-
-
-
-
-
 .projectContainer {
     display: flex;
     gap: 128px;
+}
 
-    // img {
-    //     width: 30vw;
-    // }
+.btnContainer {
+    margin-top: 64px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 32px;
 }
 
 .projectDescription {
@@ -172,190 +76,201 @@
     p {
         font-size: 16px;
     }
+
+    button {
+        width: 120px;
+        height: 30px;
+        margin-top: 32px;
+        cursor: pointer;
+        color: #eeba2b;
+        box-sizing: border-box;
+        background-color: black;
+        font-size: 13px;
+        border: 2px solid #eeba2b;
+
+        &:hover {
+            background-color: #eeba2b;
+            color: white;
+        }
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Extra small devices (phones, 280px and down) */
 @media only screen and (min-width: 280px) {
-
-    .goToProject {
-        font-size: 15px;
-
-        button {
-            height: 25%;
-            width: 30%;
-        }
-
-    }
-
-    .img-div {
-        width: 100%;
-    }
-
-    // .my-projects {
-    //     img {
-    //         width: 100%;
-    //     }
-    // }
-
-    .my-work-container {
-
-        padding-left: 12px;
-        padding-right: 12px;
-
-        h1 {
-            margin-bottom: 16px;
-        }
-    }
-
-    .button-container {
-        button {
-            width: 100px;
-            height: 50px;
-        }
-    }
-
-    .button-container {
+    .projectContainer {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 32px;
+    }
 
-        button {
-            width: 90px;
-            height: 50px;
-        }
+    .projectDescription {
+        width: 90vw;
+        padding-top: 32px;
+        align-items: center;
+    }
+
+    .btnContainer {
+        margin-top: 0;
+    }
+
+    .imageContainer {
+        width: auto;
+    }
+
+    .crm {
+        width: 70vw;
+        margin-left: -24px;
+    }
+
+    .rof {
+        width: 80vw;
+        margin-left: 53px;
+    }
+
+    .join {
+        width: 70vw;
+        margin-left: 20px;
+    }
+
+    .polloLoco {
+        width: 90vw;
+        margin-left: 22px;
     }
 }
 
 /* Extra small devices (phones, 360px and down) */
-@media only screen and (min-width: 360px) {
-    .my-work-container {
-        padding-left: 32px;
-        padding-right: 32px;
+@media only screen and (min-width: 450px) {
+
+    .projectDescription {
+        width: 400px;
+    }
+
+    .crm {
+        width: 70vw;
+        margin-left: -24px;
+    }
+
+    .rof {
+        width: 80vw;
+        margin-left: 65px;
+    }
+
+    .join {
+        width: 70vw;
+        margin-left: 20px;
+    }
+
+    .polloLoco {
+        width: 90vw;
+        margin-left: 36px;
     }
 }
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
-    .img-div {
-        width: 40%;
-        padding-left: 0px;
-        padding-right: 0px;
+    .crm {
+        width: 70vw;
+        margin-left: -31px;
     }
 
-
-    .my-projects {
-        width: 100%;
-
-        // img {
-        //     width: 270px;
-
-        //     &:hover {
-        //         width: 272px;
-        //     }
-        // }
+    .rof {
+        width: 80vw;
+        margin-left: 92px;
     }
 
-    .goToProject {
-        padding: 12px;
-
-        p {
-            font-size: 14px;
-        }
+    .join {
+        width: 70vw;
+        margin-left: 29px;
     }
+
+    .polloLoco {
+        width: 90vw;
+        margin-left: 51px;
+    }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-    .my-projects {
-        width: 90%;
+    .crm {
+        width: 480px;
+        margin-left: -31px;
     }
 
-    .button-container {
-        button {
-            width: 130px;
-            height: 70px;
-        }
+    .rof {
+        width: 560px;
+        margin-left: 109px;
     }
-}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .my-projects {
-        width: 70%;
+    .join {
+        width: 500px;
+        margin-left: 37px;
     }
+
+    .polloLoco {
+        width: 620px;
+        margin-left: 69px;
+    }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    .projectContainer {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
 
-    // .my-work-container {
-    //     height: 85vh;
-    // }
-}
+    }
 
-/* Extra large devices (large laptops and desktops, 1500px and up) */
-@media only screen and (min-width: 1500px) {
-    // .my-projects {
-    //     height: 65vh;
-    // }
-}
+    .projectDescription {
+        width: 30vw;
+        padding-top: 48px;
 
-/* Extra large devices (large desktops, 1650px and up) */
-@media only screen and (min-width: 1650px) {
+        p {
+            width: 400px;
+        }
+    }
+
     .my-projects {
-        width: 60%;
+        margin-top: 96px;
+    }
+
+    .imageContainer {
+        width: 500px;
     }
 }
 
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+    .projectContainer {
+        gap: 96px;
+    }
+
+    .my-work-container {
+        background-color: #080808;
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 32px;
+        padding-top: 32px;
+
+        h1 {
+            font-size: 64px;
+        }
+    }
 
 
-.btn-image {
-    border-radius: 4px;
-    text-align: center;
-    font-size: 18px;
-    width: 220px;
-    transition: all 0.5s;
-    cursor: pointer;
-    overflow: hidden;
+    .my-projects {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 32px;
+        margin-top: 32px;
+    }
 }
 
-.btn-image {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-.btn-image:after {
-    content: '»';
-    position: absolute;
-    opacity: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-
-.btn-image:hover {
-    padding-right: 24px;
-    padding-left: 8px;
-}
-
-.btn-image:hover:after {
-    opacity: 1;
-    right: 10px;
-}

@@ -54,7 +54,7 @@ export class IntroductionComponent implements OnInit {
       if (number === 5 || number === 6 || number === 7 || number ===8 || number === 9) {
         span.classList.add('addFullColor');
       } else if (number === 43) {
-        span.classList.add('addFullColorGreen');
+        span.classList.add('addFullColorYellow');
       } else {
         span.classList.add('addColor');
       }
@@ -62,7 +62,6 @@ export class IntroductionComponent implements OnInit {
       number++;
       if (number === splitText.length) {
         clearInterval(addColor);
-        // this.styleContactButton();
         this.showMyText();
         number = 0;
       }
@@ -73,10 +72,5 @@ export class IntroductionComponent implements OnInit {
     console.log('now')
     let txt = document.getElementById('introText');
     txt.classList.add('about-me-text');
-  }
-
-  styleContactButton() {
-    let btn = document.getElementById('contactButton');
-    btn.classList.add('showButton')
   }
 }

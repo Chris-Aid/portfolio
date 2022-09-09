@@ -1,128 +1,88 @@
 <div id="projects" class="my-work-container">
     <h1>Portfolio</h1>
-    <!-- <div class="button-container">
-        <button [ngClass]="all ? 'add-bg-color' : ''" (click)="all = true ; javascript = false ; angular = false; changeTo('all')"
-            id="all">All</button>
-        <button [ngClass]="angular ? 'add-bg-color' : ''" (click)="angular = true ; javascript = false ; all = false; changeTo('angular')"
-            id="angular">Angular</button>
-        <button [ngClass]="javascript? 'add-bg-color' : ''" (click)="javascript = true ; angular = false ; all = false; changeTo('javascript')"
-            id="JavaScript">Java Script</button>
-    </div> -->
-
     <div class="my-projects">
 
         <div class="projectContainer">
             <div class="imageContainer">
-                <img class="crm" src="/assets/img/projects/crm3.png" alt="">
-            </div>
-
-            <div class="projectDescription">
-                <h2>
-                    Join
-                </h2>
-                <p>Join is a kanban-based management tool that helps you distribute tasks within the team.</p>
-            </div>
-          
-        </div>
-        <div class="projectContainer">
-
-            <div class="imageContainer">
-                <img class="rof" src="/assets/img/projects/rof.png"  alt="">
-            </div>
-
- 
-            <div class="projectDescription">
-                <h2>
-                    El Pollo Loco
-                </h2>
-                <p>El Pollo Loco is a small object-oriented Jump & Run Game, just give it a try! :)</p>
-            </div>
-        </div>
-        <div class="projectContainer">
-
-            <div class="imageContainer">
-                <img class="join" src="/assets/img/projects/join1.png" alt="">
-            </div>
-
-            <div class="projectDescription">
-                
-                <h2>
-                    Ring of Fire
-                </h2>
-                <p>Ring of Fire is a angular based card game that brings friends together even in times of corona
-                    and
-                    lockdowns.</p>
-            </div>
-        </div>
-        <div class="projectContainer">
-
-            <div class="imageContainer">
-                <img class="polloLoco" src="/assets/img/projects/el-pollo-loco3.png"  alt="">
+                <img (click)="navigateTo('https://in-city-crm.christian-aidelsburger.de/')" class="crm"
+                    src="/assets/img/projects/crm3.png" alt="">
             </div>
 
             <div class="projectDescription">
                 <h2>
                     CRM-Application
+
                 </h2>
-                <p>This is a crm-application for a city-marketing company from Ingolstadt. The app has not yet been
-                    accomplished.</p>
-            </div>
-        </div>
+                <p>
+                    This is a crm-application for a city-marketing company from Ingolstadt. It makes it easier to handle
+                    customer data and speeds up certain work processes. The app has not yet been accomplished.</p>
 
-        <!-- <div class="img-div">
-            <div *ngIf="all || javascript" (mouseenter)="hovered1 = true" (mouseleave)="hovered1 = false"
-                class="projects">
-                <div *ngIf="hovered1" id="project1" class="goToProject">
-                    <h2 class="project-name">Join</h2>
-                    <p>Join is a kanban-based management tool that helps you distribute tasks within the team.</p>
-                    <button (click)="navigateTo('https://join.christian-aidelsburger.de/')" class="btn-image">Try out!</button>
+                <div class="btnContainer">
+                    <button (click)="navigateTo('https://in-city-crm.christian-aidelsburger.de/')">TRY OUT!</button>
+                    <button (click)="navigateTo('https://github.com/Chris-Aid/IN-City-CRM')">GITHUB</button>
                 </div>
 
+            </div>
 
-                <img class="projectImage" id="img1" src="/assets/img/projectsPicture2/board2.png" alt="Join">
+        </div>
+        <div class="projectContainer">
+
+            <div (click)="navigateTo('https://ring-of-fire.christian-aidelsburger.de/')" class="imageContainer">
+                <img class="rof" src="/assets/img/projects/rof.png" alt="">
+            </div>
+
+            <div class="projectDescription">
+                <h2>
+                    Ring of Fire
+                </h2>
+                <p>Ring of Fire is a angular based card game that brings friends together even in times of corona
+                    and
+                    lockdowns.
+                </p>
+
+                <div class="btnContainer">
+                    <button (click)="navigateTo('https://ring-of-fire.christian-aidelsburger.de/')">TRY OUT!</button>
+                    <button (click)="navigateTo('https://github.com/Chris-Aid/ringoffire')">GITHUB</button>
+                </div>
             </div>
         </div>
+        <div class="projectContainer">
 
-        <div class="img-div">
-            <div *ngIf="all || javascript" (mouseenter)="hovered2 = true" (mouseleave)="hovered2 = false"
-                class="projects">
-                <div *ngIf="hovered2" id="project2" class="goToProject">
-                    <h2 class="project-name">El Pollo Loco</h2>
-                    <p>El Pollo Loco is a small object-oriented Jump & Run Game, just give it a try! :)</p>
-                    <button (click)="navigateTo('https://el-pollo-loco.christian-aidelsburger.de/')" class="btn-image">Try out!</button>
+            <div (click)="navigateTo('https://join.christian-aidelsburger.de/')" class="imageContainer">
+                <img class="join" src="/assets/img/projects/join1.png" alt="">
+            </div>
+
+            <div class="projectDescription">
+
+                <h2>
+                    Join
+                </h2>
+                <p>Join is a kanban-based management tool that helps you distribute tasks within the team.</p>
+
+                <div class="btnContainer">
+                    <button (click)="navigateTo('https://join.christian-aidelsburger.de/')">TRY OUT!</button>
+                    <button (click)="navigateTo('https://github.com/SabineDetering/Join')">GITHUB</button>
                 </div>
-
-
-                <img class="projectImage" id="img2" src="/assets/img/projectsPicture2/board2.png" alt="El Pollo Loco">
             </div>
         </div>
+        <div class="projectContainer">
 
-        <div class="img-div">
-            <div *ngIf="all || angular" (mouseenter)="hovered3 = true" (mouseleave)="hovered3 = false" class="projects">
-                <div *ngIf="hovered3" id="project3" class="goToProject">
-                    <h2 class="project-name">Ring of Fire</h2>
-                    <p>Ring of Fire is a angular based card game that brings friends together even in times of corona
-                        and
-                        lockdowns.</p>
-                    <button (click)="navigateTo('https://ring-of-fire.christian-aidelsburger.de/')" class="btn-image">Try out!</button>
+            <div (click)="navigateTo('https://el-pollo-loco.christian-aidelsburger.de/')" class="imageContainer">
+                <img class="polloLoco" src="/assets/img/projects/el-pollo-loco3.png" alt="">
+            </div>
+
+            <div class="projectDescription">
+                <h2>
+                    El Pollo Loco
+                </h2>
+                <p>El Pollo Loco is a small object-oriented Jump & Run Game, just give it a try! :)
+                </p>
+
+                <div class="btnContainer">
+                    <button (click)="navigateTo('https://el-pollo-loco.christian-aidelsburger.de/')">TRY OUT!</button>
+                    <button (click)="navigateTo('https://github.com/Chris-Aid/El_Pollo_Loco')">GITHUB</button>
                 </div>
-
-                <img class="projectImage" id="img3" src="/assets/img/projectsPicture2/board2.png" alt="laptop">
             </div>
         </div>
-
-        <div class="img-div">
-            <div *ngIf="all || angular" (mouseenter)="hovered4 = true" (mouseleave)="hovered4 = false" class="projects">
-                <div *ngIf="hovered4" id="project3" id="project4" class="goToProject">
-                    <h2 class="project-name">IN-City CRM</h2>
-                    <p>This is a crm-application for a city-marketing company from Ingolstadt. The app has not yet been
-                        accomplished.</p>
-                    <button (click)="navigateTo('https://in-city-crm.christian-aidelsburger.de/')" class="btn-image">Try out!</button>
-                </div>
-                <img class="projectImage" id="img4" src="/assets/img/projectsPicture2/board2.png" alt="tablet">
-            </div>
-
-
-        </div> -->
     </div>
 </div>

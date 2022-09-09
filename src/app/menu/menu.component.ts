@@ -1,4 +1,5 @@
 
+import { HighContrastModeDetector } from '@angular/cdk/a11y';
 import { Component, ElementRef, Input, OnChanges, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -25,9 +26,15 @@ export class MenuComponent implements OnChanges {
   changeMenuBar() {
     if (this.darkMode) {
       this.imgColor = 'black'
+      this.hideSecondBackgroundColor();
     } else {
       this.imgColor = 'white'
     }
+  }
+
+  hideSecondBackgroundColor() {
+    let background = document.getElementById('headerBackground');
+    background.style.display = 'none';
   }
 
   getStyleOfMenu() {

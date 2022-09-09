@@ -8,42 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactMeComponent implements OnInit {
 
-  loaded1 = false;
-  loaded2 = false;
-  loaded3 = false;
-
-
   intervalStopped = false;
   constructor() { }
   ngOnInit(): void {
-    // this.animateForm();
     this.observe();
-
-    // setInterval(() => {
-    //   console.log(this.loaded1)
-    // }, 300)
-
-
-
   }
-
-  // animateForm() {
-  //   document.addEventListener('scroll', (e) => {
-  //     if (!this.intervalStopped) {
-
-  //       if (window.pageYOffset > 2800) {
-  //         this.loaded1 = true
-  //       } 
-  //        if (window.pageYOffset > 3000) {
-  //         this.loaded2 = true;
-  //       } 
-  //        if (window.pageYOffset > 3200) {
-  //         this.loaded3 = true;
-  //       }
-  //     }
-
-  //   });
-  // }
 
   observe() {
     let observer = new IntersectionObserver(function (entries) {
@@ -55,7 +24,7 @@ export class ContactMeComponent implements OnInit {
           if (i == 4) {
             clearInterval(formAnimation);
           }
-        }, 500)
+        }, 200)
         console.log('Element is fully visible in screen');
       }
     }, { threshold: [1] });

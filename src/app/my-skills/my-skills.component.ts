@@ -11,29 +11,38 @@ export class MySkillsComponent implements OnInit {
 
   intervalStopped = false;
 
-  skillImages = ['java script.png', 'angular.png', 'HTML-CSS.png', 'Group 226.png', 'Git-Icon-1788C 2.png', 'design-thinking.png', 'rest-api.png', 'wordpress.png', 'database1.png'];
-  skillTitles = ['Java script', 'Angular', 'HTML / CSS', 'SCRUM', 'Git', 'Design Thinking', 'Rest API', 'Wordpress', 'Firebase'];
+  mainImages = ['angular.png', 'js.png', 'html.png'];
+  secondImages = ['scrum.png', 'git.png', 'design.png'];
+  lastImages = ['api.png', 'wp.png', 'firebase.png'];
+  mainTitles = ['JAVA SCRIPT', 'ANGULAR', 'HTML / CSS'];
+  secondTitles = ['SCRUM', 'GIT', 'DESIGN'];
+  lastTitles = ['REST API', 'WORDPRESS', 'FIREBASE'];
 
   ngOnInit(): void {
-    this.observe();
+    // this.observe();
   }
 
-  observe() {
-    let observer = new IntersectionObserver(function (entries) {
-      if (entries[0].isIntersecting === true) {
-        let i = 0;
-        let skillAnimation = setInterval(() => {
-          document.getElementById(`imageContainer-` + i).classList.add('animateSkills');
-          i++;
-          if (i >= 9) {
-            clearInterval(skillAnimation);
-            this.intervalStopped = true;
-          }
-        }, 200)
-      }
-    }, { threshold: [1] });
+  // observe() {
+  //   let observer = new IntersectionObserver(function (entries) {
+  //     if (entries[0].isIntersecting === true) {
+  //       let i = 0;
+  //       let skillAnimation = setInterval(() => {
+  //         document.getElementById(`imageContainer-` + i).classList.add('animateSkills');
+  //         i++;
+  //         if (i >= 3) {
+  //           clearInterval(skillAnimation);
+  //           this.intervalStopped = true;
+  //           i = 0;
+  //           this.secondAnimation(i);
+  //         }
+  //       }, 200);
 
-    observer.observe(document.querySelector(".subject-container"));
-  }
+  //     }
+  //   }, { threshold: [1] });
+
+  //   observer.observe(document.querySelector(".container1"));
+  //   observer.observe(document.querySelector(".container2"));
+  //   observer.observe(document.querySelector(".container3"));
+  // }
 }
 
