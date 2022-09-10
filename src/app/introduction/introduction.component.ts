@@ -51,10 +51,10 @@ export class IntroductionComponent implements OnInit {
     let addColor = setInterval(() => {
       const span = document.querySelectorAll('span')[number];
 
-      if (number === 5 || number === 6 || number === 7 || number ===8 || number === 9) {
+      if (number === 5 || number === 6 || number === 7 || number === 8 || number === 9) {
         span.classList.add('addFullColor');
       } else if (number === 43) {
-        span.classList.add('addFullColorYellow');
+        span.classList.add('addFullColor');
       } else {
         span.classList.add('addColor');
       }
@@ -62,14 +62,9 @@ export class IntroductionComponent implements OnInit {
       number++;
       if (number === splitText.length) {
         clearInterval(addColor);
-        this.showMyText();
         number = 0;
       }
     }, 50);
   }
 
-  showMyText() {
-    let txt = document.getElementById('introText');
-    txt.classList.add('about-me-text');
-  }
 }
