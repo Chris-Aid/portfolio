@@ -7,10 +7,11 @@
 
     <div class="footer-icons">
         <a (click)="navigateTo('https://www.linkedin.com/in/christian-aidelsburger-b48158243/')"><img
-                src="/assets/img/socialmedia/linkedin-box-fill.png" alt="linked in"></a>
-        <a (click)="navigateTo('https://github.com/Chris-Aid')"><img src="/assets/img/socialmedia/github-fill.png"
-                alt="github"></a>
+                [class.darkModeIcons]="darkMode" src="/assets/img/socialmedia/linkedin-box-fill.png"
+                alt="linked in"></a>
+        <a (click)="navigateTo('https://github.com/Chris-Aid')"><img [class.darkModeIcons]="darkMode"
+                src="/assets/img/socialmedia/github-fill.png" alt="github"></a>
         <a (click)="navigateTo('https://www.xing.com/profile/Christian_Aidelsburger2/cv')"><img
-                src="/assets/img/socialmedia/xing-fill.png" alt="xing"></a>
+                [class.darkModeIcons]="darkMode" src="/assets/img/socialmedia/xing-fill.png" alt="xing"></a>
     </div>
 </div>

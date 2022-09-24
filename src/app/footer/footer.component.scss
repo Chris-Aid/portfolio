@@ -28,7 +28,15 @@
         height: 40px;
         margin-left: 32px;
         cursor: pointer;
+
+        &:hover {
+            filter: invert(0.4);
+        }
     }
+}
+
+.darkModeIcons {
+    filter: invert(1);
 }
 
 .link-container {

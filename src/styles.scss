@@ -1,19 +1,26 @@
+::-webkit-scrollbar {
+    width: 10px;
+    /* Mostly for vertical scrollbars */
+    height: 10px;
+    /* Mostly for horizontal scrollbars */
+}
 
-  ::-webkit-scrollbar {
-    width: 10px; /* Mostly for vertical scrollbars */
-    height: 10px; /* Mostly for horizontal scrollbars */
-  }
-  ::-webkit-scrollbar-thumb { /* Foreground */
+::-webkit-scrollbar-thumb {
+    /* Foreground */
     background: #eeba2b;
     border-radius: 10px;
-  }
-  ::-webkit-scrollbar-thumb:hover { /* Foreground */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    /* Foreground */
     background: #ffd561;
 
-  }
-  ::-webkit-scrollbar-track { /* Background */
+}
+
+::-webkit-scrollbar-track {
+    /* Background */
     background: #1A1A1A;
-  }
+}
 
 
 body {
@@ -51,6 +58,7 @@ span.addFullColorYellow {
     0% {
         color: white;
     }
+
     50% {
         color: #eeba2b;
     }
@@ -65,20 +73,27 @@ span.addFullColor {
 }
 
 .showButton {
-display: flex !important;
-justify-content: center;
-align-items: center;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
 }
 
 .mat-focus-indicator {
     background-color: transparent;
     display: flex !important;
-    justify-content: flex-end !important;
+    justify-content: center !important;
     padding-right: 0 !important;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 
 .mat-menu-content {
@@ -102,7 +117,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 /* Extra small devices (phones, 280px and down) */
 @media only screen and (min-width: 280px) {
     .mat-menu-content {
-        padding-right: 32px;
+        padding: 0px !important;
+        width: 130px;
     }
 
     span {
@@ -138,6 +154,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
     .mat-menu-content {
         padding-right: 32px;
+        width: 200px;
     }
 }
 
@@ -184,5 +201,3 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
         padding-top: 0;
     }
 }
-
-

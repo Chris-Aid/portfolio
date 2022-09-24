@@ -2,4 +2,4 @@
 <div [ngClass]="{'container': this.router.url == '/imprint' || this.router.url == '/data-protection'}">
     <router-outlet></router-outlet>
 </div>
-<app-footer></app-footer>
+<app-footer [darkMode]="this.router.url == '/imprint' || this.router.url == '/data-protection'"></app-footer>

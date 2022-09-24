@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class FooterComponent implements OnInit {
 
+  @Input() darkMode: boolean;
+
   constructor(public router: Router) { }
 
   ngOnInit(): void {
